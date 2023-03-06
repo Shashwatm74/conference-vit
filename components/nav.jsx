@@ -12,6 +12,7 @@ const Nav = () => {
                     </Link>
                 </div>
                 <ul>
+
                     <li>
                         <Link href="/about">About</Link>
                     </li>
@@ -22,10 +23,10 @@ const Nav = () => {
                         <Link href="/schedule">Schedule</Link>
                     </li>
                     <li>
-                        <Link href="/venue">Venue</Link>
+                        <Link href="/login">login</Link>
                     </li>
                     <li>
-                        <Link href="/sponsors">Sponsors</Link>
+                        <Link href="/registrations">Registration</Link>
                     </li>
                     <li>
                         <Link href="/contact">Contact</Link>
