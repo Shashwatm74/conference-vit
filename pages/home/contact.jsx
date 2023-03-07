@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import styles from '@/styles/components/contactpage/Contact.module.scss'
+
 
 function Contact() {
     return (

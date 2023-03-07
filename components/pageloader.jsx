@@ -1,4 +1,6 @@
 import React from 'react'
+import styles from '@/styles/Pageloader.module.scss'
+
 
 function PageLoader() {
     return (
