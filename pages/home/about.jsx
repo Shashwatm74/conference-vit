@@ -9,7 +9,7 @@ function About() {
                 <meta name="description" content="Conference on Linear Algebra" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div>About</div>
+            <div >About</div>
         </>
     )
 }
