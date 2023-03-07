@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import styles from '@/styles/components/loginpage/Login.module.scss'
 
 function Login() {
     return (
-        <div>Login</div>
+        <section className={styles.login}>Login</section>
     )
 }
 

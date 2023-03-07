@@ -1,2 +1,6 @@
 @import '@/styles/abstract/mixin';
 @import '@/styles/abstract/variable';
+
+.home {
+    @include section;
+}

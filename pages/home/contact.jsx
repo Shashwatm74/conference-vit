@@ -11,7 +11,9 @@ function Contact() {
                 <meta name="description" content="Conference on Linear Algebra" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div>Contact</div>
+            <section className={styles.contact} >
+                Contact
+            </section>
         </>
     )
 }

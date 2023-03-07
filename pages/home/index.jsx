@@ -4,7 +4,11 @@ import styles from '@/styles/components/homepage/Home.module.scss';
 
 function HomePage() {
     return (
-        <div>home</div>
+
+        <section className={styles.home}>
+            home ggh
+
+        </section>
     )
 }
 

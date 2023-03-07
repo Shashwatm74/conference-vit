@@ -9,7 +9,9 @@ function Speakers() {
                 <meta name="description" content="Conference on Linear Algebra" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div>Speakers</div>
+            <section className={styles.speakers} >
+                speakers
+            </section>
         </>
     )
 }

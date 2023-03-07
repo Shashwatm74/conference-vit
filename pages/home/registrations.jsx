@@ -11,7 +11,9 @@ function Registration() {
                 <meta name="description" content="Conference on Linear Algebra" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div>Registration</div>
+            <section className={styles.registration} >
+                About
+            </section>
         </>
     )
 }

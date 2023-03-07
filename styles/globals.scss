@@ -1,2 +1,8 @@
 @import 'abstract/mixin';
 @import 'abstract/variable';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
