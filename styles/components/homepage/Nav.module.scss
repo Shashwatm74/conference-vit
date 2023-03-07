@@ -1,5 +1,25 @@
+@import '@/styles/abstract/mixin';
+@import '@/styles/abstract/variable';
+
 .nav {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    width: max(75%, 800px);
+    margin-left: 5em;
+
+}
+
+.nav>ul>li {
+    list-style: none;
+
+}
+
+.nav>ul>li>a {
+    text-decoration: none;
+    font-family: $text-font;
+    font-weight: 600;
+    color: black;
+
 }
