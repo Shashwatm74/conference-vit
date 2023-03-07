@@ -14,22 +14,22 @@ const Nav = () => {
                 <ul>
 
                     <li>
-                        <Link href="/about">About</Link>
+                        <Link href="/home/about">About</Link>
                     </li>
                     <li>
-                        <Link href="/speakers">Speakers</Link>
+                        <Link href="/home/speakers">Speakers</Link>
                     </li>
                     <li>
-                        <Link href="/schedule">Schedule</Link>
+                        <Link href="/home/schedule">Schedule</Link>
                     </li>
                     <li>
                         <Link href="/login">login</Link>
                     </li>
                     <li>
-                        <Link href="/registrations">Registration</Link>
+                        <Link href="/home/registrations">Registration</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/home/contact">Contact</Link>
                     </li>
                 </ul>
 
