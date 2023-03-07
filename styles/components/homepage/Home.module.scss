@@ -4,3 +4,30 @@
 .home {
     @include section;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto) 30px;
+
+    background-color: $secondary-color;
+    margin-left: 24vh;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.btnContainer {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+
+.btn {
+    background-color: $tertiary-color;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    cursor: pointer;
+}

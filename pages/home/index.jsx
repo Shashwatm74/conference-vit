@@ -6,8 +6,11 @@ function HomePage() {
     return (
 
         <section className={styles.home}>
-            home ggh
-
+            <div className={styles.container}>
+                <div className={styles.btnContainer}>
+                    <button className={styles.btn}></button>
+                </div>
+            </div>
         </section>
     )
 }
