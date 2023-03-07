@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import style from '@styles/components/speakerpage/Speakers.module.scss'
+import styles from '@/styles/components/speakerpage/Speakers.module.scss'
 function Speakers() {
     return (
         <>
