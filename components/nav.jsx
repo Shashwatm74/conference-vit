@@ -6,7 +6,7 @@ import styles from '@/styles/components/homepage/Nav.module.scss'
 const Nav = () => {
     return (
         <>
-            <div >
+            <div className={styles.nav}>
                 <nav>
                     <div className="logo">
                         <Link href="/">
