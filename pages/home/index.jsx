@@ -23,19 +23,11 @@ function HomePage() {
 
                 <div className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Back to top &gt;</div>
 
-<<<<<<< HEAD
-            <div className={styles.container}>
-                <Image className={styles.image1} src={formula} alt="" />
-                <Image className={styles.image2} src={func} alt="" />
-                <Image className={styles.image3} src={meth} alt="" />
-                <Image className={styles.image4} src={trig} alt=""/>
-=======
                 <div className={styles.container}>
                     <Image className={styles.image1} src={formula} />
                     <Image className={styles.image2} src={func} />
                     <Image className={styles.image3} src={meth} />
                     <Image className={styles.image4} src={trig} />
->>>>>>> 31ba183bf0aa8ac0d2285ddaa3040f821d325521
 
                     <div className={styles.btnContainer}>
                         <button className={styles.btn} ><span className={styles.span_arrow} >&gt;</span></button>

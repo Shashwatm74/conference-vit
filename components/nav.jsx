@@ -11,28 +11,28 @@ const Nav = () => {
             <nav className={styles.nav}>
                 <ul className={styles.nav}>
                     <div className="logo">
-                        <Link href="/" replace >
+                        <a href="/" replace >
 
                             <Image src="/logo.png" width={128} height={77} />
 
-                        </Link>
+                        </a>
                     </div>
                     <li>
-                        <Link href="/#about" replace >About</Link>
+                        <a href="/#about" replace >About</a>
 
 
                     </li>
                     <li>
-                        <Link href="/#speakers" replace>Speakers</Link>
+                        <a href="/#speakers" replace>Speakers</a>
                     </li>
                     <li>
-                        <Link href="/#schedule" replace>Schedule</Link>
+                        <a href="/#schedule" replace>Schedule</a>
                     </li>
                     <li>
-                        <Link href="/#registrations" replace>Registration</Link>
+                        <a href="/#registrations" replace>Registration</a>
                     </li>
                     <li>
-                        <Link href="/#contact" replace>Contact</Link>
+                        <a href="/#contact" replace>Contact</a>
                     </li>
                     <li>
                         <Link href="/login">Login</Link>
