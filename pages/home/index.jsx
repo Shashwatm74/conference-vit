@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from '@/styles/components/homepage/Home.module.scss';
 import formula from '@/public/formula.png';
 import func from '@/public/function.png';
