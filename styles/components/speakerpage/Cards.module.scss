@@ -4,33 +4,52 @@
 .card{
     margin-top: min(3vh, 1em);
     background-color: $secondary-color;
-    margin-left: 74vh;
-    width: max(30%, 150px);
-    height: max(80%, 420px);
+    margin-left: 90vh;
+    width: max(15%, 150px);
+    height: max(55%, 420px);
     border-radius: 15px;
+    // overflow : hidden;
 }
 
 .container {
-    background-color: $secondary-color;
+    z-index: 1;
+    top: 215px;
+    left: -20px;
+    position:relative;
+    background-color: transparent;
     display: grid;
-    height: 100%;
+    margin-top: 20vh;
+    width: max(35%, 300px);
+    height: max(70%, 420px);
     grid-template-columns: 100%;
-    grid-template-rows: 45% 45% 10%;
+    grid-template-rows: 60% 35% 5%;
     text-align: center;
-    row-gap: 10px;
-
+    rotate: calc(-20deg);
+    row-gap: 2px;
 }
 
-.subcontainer{
-    background-color: white ;
+.namecontainer{
+    background-color: $primary-color ;
+    height :90px;
+    width :100%;
+    margin-top:50%
+    
+}
 
+.detailcontainer{
+    background-color: $primary-color ;
+    height :100%;
+    width :100%;
 }
 
 .button{
+    z-index: 2;
+    position: absolute;
     background-color: $tertiary-color;
-    height: 8vh;
-    width: 8vh;
+    height: 10vh;
+    width: 10vh;
     border-radius: 50%;
     cursor: pointer;
-
+    margin-top: -50px;
+    margin-left: -20px;
 }
