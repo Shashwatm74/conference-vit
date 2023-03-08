@@ -9,13 +9,14 @@ import trig from '@/public/trigonometry.png';
 
 
 
+
 function HomePage() {
     return (
 
         <section className={styles.home}>
-            <Link href="/">
-                <div className={styles.btop}>Back to top &gt;</div>
-            </Link>
+
+            <div className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Back to top &gt;</div>
+
             <div className={styles.container}>
                 <Image className={styles.image1} src={formula} />
                 <Image className={styles.image2} src={func} />
@@ -23,10 +24,11 @@ function HomePage() {
                 <Image className={styles.image4} src={trig} />
 
                 <div className={styles.btnContainer}>
-                    <button className={styles.btn}><span className={styles.span_arrow}>&gt;</span></button>
+                    <button className={styles.btn} ><span className={styles.span_arrow} >&gt;</span></button>
                 </div>
             </div>
         </section>
+
 
     )
 }

@@ -6,7 +6,10 @@
 @import 'abstract/mixin';
 @import 'abstract/variable';
 
-*,
+#__next {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     scroll-behavior: smooth;
