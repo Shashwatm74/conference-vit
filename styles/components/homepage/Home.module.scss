@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Source+Code+Pro:ital@1&display=swap');
 
 @mixin image-size {
-    height: 20vh;
-    width: 20vh;
+    height: 25vh;
+    width: 25vh;
+    place-self: center;
 }
 
 .home {
@@ -43,18 +44,34 @@
 
 .image1 {
     @include image-size();
+    grid-column: 1;
+    grid-row: 1;
+    margin-right: 92%;
+    transform: rotate(-15deg);
 }
 
 .image2 {
     @include image-size();
+    grid-column: 1;
+    grid-row: 2;
+    margin-right: 97%;
+    transform: rotate(5deg);
 }
 
 .image3 {
     @include image-size();
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 100%;
+    transform: rotate(-5deg);
 }
 
 .image4 {
     @include image-size();
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 88%;
+    transform: rotate(12deg);
 }
 
 .btop {
