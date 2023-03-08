@@ -1,5 +1,6 @@
 @import '@/styles/abstract/mixin';
 @import '@/styles/abstract/variable';
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Source+Code+Pro:ital@1&display=swap');
 
 @mixin image-size {
     height: 20vh;
@@ -8,6 +9,8 @@
 
 .home {
     @include section;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
 }
 
 .container {
@@ -20,6 +23,7 @@
     width: max(80%, 800px);
     height: max(80%, 420px);
     border-radius: 20px;
+    margin-top: 2em;
 }
 
 .btnContainer {
@@ -65,7 +69,11 @@
 .span_arrow {
     color: white;
     writing-mode: vertical-lr;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5em;
-    transform: translate(0, 0.15em);
+    font-family: 'Manrope', sans-serif;
+    font-size: 3.5em;
+    height: 40px;
+    width: 40px;
+    margin-left: -0.35em;
+    margin-top: 0.1em;
+
 }
