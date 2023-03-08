@@ -12,11 +12,15 @@ const Nav = () => {
                 <ul className={styles.nav}>
                     <div className="logo">
                         <Link href="/" replace >
+
                             <Image src="/logo.png" width={128} height={77} />
+
                         </Link>
                     </div>
                     <li>
-                        <Link href="/#about" replace>About</Link>
+                        <Link href="/#about" replace >About</Link>
+
+
                     </li>
                     <li>
                         <Link href="/#speakers" replace>Speakers</Link>
