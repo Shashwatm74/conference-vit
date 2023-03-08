@@ -1,3 +1,11 @@
 @mixin section {
     height: 100vh;
 }
+
+@mixin nav-font {
+    text-decoration: none;
+    font-family: $text-font;
+    font-weight: 600;
+    color: black;
+    user-select: none;
+}

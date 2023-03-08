@@ -10,7 +10,7 @@ function Schedule() {
                 <meta name="description" content="Conference on Linear Algebra" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <section className={styles.schedule} >
+            <section className={styles.schedule} id="schedule">
                 Schedule
             </section>
         </>

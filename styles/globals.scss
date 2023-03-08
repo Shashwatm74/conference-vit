@@ -6,8 +6,10 @@
 @import 'abstract/mixin';
 @import 'abstract/variable';
 
+*,
 html,
 body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }

@@ -8,29 +8,29 @@ const Nav = () => {
         <>
 
             <nav className={styles.nav}>
-                <div className="logo">
-                    <Link href="/">
-                        <Image src="/logo.png" width={128} height={77} />
-                    </Link>
-                </div>
-                <ul className={styles.nav}>
+                <ul >
+                    <div className="logo">
+                        <Link href="/">
+                            <Image src="/logo.png" width={128} height={77} />
+                        </Link>
+                    </div>
                     <li>
-                        <Link href="/home/about">About</Link>
+                        <Link absolute href="#about">About</Link>
                     </li>
                     <li>
-                        <Link href="/home/speakers">Speakers</Link>
+                        <Link href="#speakers">Speakers</Link>
                     </li>
                     <li>
-                        <Link href="/home/schedule">Schedule</Link>
+                        <Link href="#schedule">Schedule</Link>
                     </li>
                     <li>
-                        <Link href="/login">Login</Link>
-                    </li>
-                    <li>
-                        <Link href="/home/registrations">Registration</Link>
+                        <Link href="#registrations">Registration</Link>
                     </li>
                     <li>
                         <Link href="/home/contact">Contact</Link>
+                    </li>
+                    <li>
+                        <Link href="/login">Login</Link>
                     </li>
                 </ul>
             </nav>

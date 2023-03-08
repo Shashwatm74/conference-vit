@@ -11,7 +11,7 @@
 }
 
 .container {
-    margin-top: min(3vh, 1em);
+
     display: grid;
     grid-template-columns: repeat(3, 33.33333%);
     grid-template-rows: repeat(2, 47%) 30px;
@@ -51,4 +51,21 @@
 
 .image4 {
     @include image-size();
+}
+
+.btop {
+    position: fixed;
+    margin-top: 32em;
+    margin-left: -2.8em;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    @include nav-font;
+}
+
+.span_arrow {
+    color: white;
+    writing-mode: vertical-lr;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    transform: translate(0, 0.15em);
 }
