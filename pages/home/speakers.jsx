@@ -5,14 +5,10 @@ import Cards from '@/components/cards';
 function Speakers() {
     return (
         <>
-            <Head>
-                <title>Speakers-VIT Conference </title>
-                <meta name="description" content="Conference on Linear Algebra" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+
             <section className={styles.speakers} id="speakers">
                 speakers
-                <Cards/>
+                <Cards />
             </section>
         </>
     )

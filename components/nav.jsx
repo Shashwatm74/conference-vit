@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/components/homepage/Nav.module.scss'
+import $ from "jquery"
 
 const Nav = () => {
     return (
@@ -10,7 +11,7 @@ const Nav = () => {
             <nav className={styles.nav}>
                 <ul className={styles.nav}>
                     <div className="logo">
-                        <Link href="/" replace>
+                        <Link href="/" replace >
                             <Image src="/logo.png" width={128} height={77} />
                         </Link>
                     </div>
@@ -27,7 +28,7 @@ const Nav = () => {
                         <Link href="/#registrations" replace>Registration</Link>
                     </li>
                     <li>
-                        <Link href="/#contact">Contact</Link>
+                        <Link href="/#contact" replace>Contact</Link>
                     </li>
                     <li>
                         <Link href="/login">Login</Link>
