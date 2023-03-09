@@ -9,8 +9,8 @@ function Cards() {
                     <div className={styles.namecontainer}>Name</div>
                     <div className={styles.detailcontainer}>Details</div>
                 </div>
-                <div className={styles.button}></div>
             </div>
+            <div className={styles.button}></div>
         </>
     )
 }

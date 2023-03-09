@@ -2,48 +2,35 @@
 @import '@/styles/abstract/variable';
 
 .card{
-    margin-top: min(3vh, 1em);
+    margin-top: 200px;
     background-color: $secondary-color;
     margin-left: 90vh;
     width: max(15%, 150px);
     height: max(55%, 420px);
     border-radius: 15px;
-    // overflow : hidden;
+    overflow : hidden;
+
 }
 
 .container {
     z-index: 1;
     top: 215px;
-    left: -20px;
+    left: -30px;
     position:relative;
     background-color: transparent;
     display: grid;
-    margin-top: 20vh;
-    width: max(35%, 300px);
-    height: max(70%, 420px);
+    margin-top: 17vh;
+    width: max(70%,400px);
+    height: 400px;
     grid-template-columns: 100%;
-    grid-template-rows: 60% 35% 5%;
+    grid-template-rows: 40%,60%;
     text-align: center;
     rotate: calc(-20deg);
-    row-gap: 2px;
-}
-
-.namecontainer{
-    background-color: $primary-color ;
-    height :90px;
-    width :100%;
-    margin-top:50%
-    
-}
-
-.detailcontainer{
-    background-color: $primary-color ;
-    height :100%;
-    width :100%;
+    row-gap:5px;
 }
 
 .button{
-    z-index: 2;
+    z-index: 100;
     position: absolute;
     background-color: $tertiary-color;
     height: 10vh;
@@ -51,5 +38,51 @@
     border-radius: 50%;
     cursor: pointer;
     margin-top: -50px;
-    margin-left: -20px;
+    margin-left: 610px;
 }
+
+.card:hover .namecontainer{
+    height: 100%;
+}
+
+.card:hover .detailcontainer{
+    height: 100%;
+}
+
+.namecontainer{
+    background-color: $primary-color ;
+    height :55%;
+    width :max(70%,400px);
+    transform: translate(50px,-150px);
+    transition: .5s ease;
+    
+}
+
+.detailcontainer{
+    background-color: $primary-color ;
+    margin-top: -92px;
+    height :80%;
+    width :max(70%,400px);
+    transform: translate(50px,-150px);
+    transition: .5s ease;
+}
+
+// .button{
+//     z-index: 100;
+//     position: absolute;
+//     background-color: $tertiary-color;
+//     height: 10vh;
+//     width: 10vh;
+//     border-radius: 50%;
+//     cursor: pointer;
+//     margin-top: -50px;
+//     margin-left: 610px;
+// }
+
+// .button:hover .namecontainer{
+//     height:65%;
+// }
+
+// .button:hover .detailcontainer{
+//     height:65%;
+// }
