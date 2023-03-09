@@ -10,3 +10,53 @@
     user-select: none;
 }
 
+@mixin login_signup_card_wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+    width: max(300px, 65%);
+    height: max(400px, 63%);
+    margin-left: 5.5em;
+    margin-top: 7em;
+    padding-top: 1em;
+    background-color: black;
+    border-radius: 10px;
+    place-self: center;
+    color: white;
+    font-family: $text-font;
+}
+
+@mixin mix_span_heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: $secondary-color;
+}
+
+@mixin mix_input_box {
+    padding: 0.3em;
+    border-radius: 5px;
+    margin: 0;
+    width: 80%;
+    font-family: $text-font;
+}
+
+@mixin mix_login_signup_text {
+    font-size: 0.9em;
+}
+
+@mixin mix_login_signup_link {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+@mixin mix_green_button {
+    height: 2.7em;
+    width: 7em;
+    border-radius: 5px;
+    border-style: none;
+    border-color: $secondary-color;
+    background-color: $secondary-color;
+    font-family: $text-font;
+    font-weight: 600;
+}

@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 function About() {
-  const sectionRef = useRef(null);
+  // const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const card1Ref = useRef(null);
   const card2Ref = useRef(null);
@@ -16,11 +16,16 @@ function About() {
   const hzLineRef = useRef(null);
   const lnUnHzRef = useRef(null);
 
+  // for (i=0,i<6,i++){
+
+  // }
+
   useEffect(() => {
 
-    gsap.fromTo(sectionRef.current,
+    gsap.fromTo(headingRef.current,
       {
         autoAlpha: 0,
+        y: 10
       },
       {
         autoAlpha: 1,
@@ -29,7 +34,7 @@ function About() {
         y: 0,
         scrollTrigger: {
           // markers: true, //can be used to debug
-          trigger: sectionRef.current,
+          trigger: headingRef.current,
           start: "top center+=100",
           toggleActions: "play none none reverse",
 
@@ -38,9 +43,57 @@ function About() {
     );
   }, []);
 
+  useEffect(() => {
+
+    gsap.fromTo(card1Ref.current,
+      {
+        autoAlpha: 0,
+        y: 10
+      },
+      {
+        autoAlpha: 1,
+        duration: 0.5,
+        delay: 0.1,
+        ease: "power2.inOut",
+        y: 0,
+        scrollTrigger: {
+          // markers: true, //can be used to debug
+          trigger: card1Ref.current,
+          start: "top center+=90",
+          toggleActions: "play none none reverse",
+
+        }
+      }
+    );
+  }, []);
+  useEffect(() => {
+
+    gsap.fromTo(card2Ref.current,
+      {
+        autoAlpha: 0,
+        y: 10
+      },
+      {
+        autoAlpha: 1,
+        duration: 0.5,
+        delay: 0.1,
+        ease: "power2.inOut",
+        y: 0,
+        scrollTrigger: {
+          // markers: true, //can be used to debug
+          trigger: card2Ref.current,
+          start: "top center+=200",
+          toggleActions: "play none none reverse",
+
+        }
+      }
+    );
+  }, []);
+
+
   return (
     <>
-      <section ref={sectionRef} className={styles.about} id="about">
+      <section className={styles.about} id="about">
 
         <div className={styles.body}>
           <div ref={headingRef} className={styles.heading}>
