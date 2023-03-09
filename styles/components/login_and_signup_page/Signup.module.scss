@@ -1,0 +1,41 @@
+@import '@/styles/abstract/mixin';
+@import '@/styles/abstract/variable';
+
+.login {
+    @include section;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33333%);
+    grid-template-rows: 100%;
+}
+
+.login_container {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.signup_card_wrapper {
+    @include login_signup_card_wrapper;
+    grid-template-rows: 9% 4% 9% 9% 4% 9% 4% 9% 4% 9%;
+
+}
+
+.span_heading {
+    @include mix_span_heading;
+}
+
+.input_box {
+    @include mix_input_box;
+}
+
+.signup_text {
+    @include mix_login_signup_text;
+}
+
+.signup_link>a {
+    @include mix_login_signup_link;
+
+}
+
+.green_button {
+    @include mix_green_button;
+}
