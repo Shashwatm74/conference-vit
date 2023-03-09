@@ -4,7 +4,9 @@
 
 .about {
   @include section;
+  // transform: translate(0);
 }
+
 .body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -12,17 +14,20 @@
   grid-row-gap: minmax(150px, auto);
   justify-items: center;
 }
+
 .cards {
   display: grid;
   grid-column-start: 2;
   grid-column-end: 3;
 }
+
 .heading {
   place-items: center;
   text-align: center;
   grid-column-start: 2;
   grid-row-end: 1;
 }
+
 .card1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 20em;
@@ -33,14 +38,16 @@
   font-family: "Golos Text", sans-serif;
   border-radius: 5%;
 }
-.card1 > p {
+
+.card1>p {
   color: aliceblue;
   font-family: "Golos Text", sans-serif;
   text-align: left;
   padding: 3em 1em 0em 1em;
   font-weight: 1000;
 }
-.card2 > p {
+
+.card2>p {
   color: black;
   font-family: "Golos Text", sans-serif;
   text-align: left;
@@ -48,13 +55,15 @@
   font-weight: 1200;
   font-weight: bold;
 }
-.card3 > p {
+
+.card3>p {
   color: black;
   font-family: "Golos Text", sans-serif;
   text-align: left;
   padding: 3em 1em 0em 1em;
   font-weight: bold;
 }
+
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 20em;
@@ -67,6 +76,7 @@
   position: relative;
   left: 12em;
 }
+
 .card3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 20em;
@@ -78,6 +88,7 @@
   position: relative;
   bottom: 12em;
 }
+
 .hz_line {
   width: 15em;
   color: grey;
@@ -85,6 +96,7 @@
   left: 23em;
   bottom: 15em;
 }
+
 .ln_un_hz {
   font-family: "Golos Text", sans-serif;
   width: 15em;
@@ -95,9 +107,11 @@
   left: 11em;
   bottom: 8em;
 }
+
 .heading span {
   background-color: #b8ff65;
 }
+
 .ln-un-hz span {
   background-color: #b8ff65;
 }

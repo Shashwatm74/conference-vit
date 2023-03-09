@@ -77,11 +77,14 @@
 .btop {
     position: fixed;
     margin-top: 32em;
+    padding-bottom: 4px;
     margin-left: -2.8em;
     transform: rotate(-90deg);
     cursor: pointer;
     @include nav-font;
 }
+
+
 
 .span_arrow {
     color: white;

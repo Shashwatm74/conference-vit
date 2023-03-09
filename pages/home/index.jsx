@@ -21,7 +21,7 @@ function HomePage() {
             </Head>
             <section className={styles.home}>
 
-                <div className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Back to top &gt;</div>
+                <div className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><a>Back to top</a> &gt;</div>
 
                 <div className={styles.container}>
                     <Image className={styles.image1} src={formula} />
@@ -30,7 +30,7 @@ function HomePage() {
                     <Image className={styles.image4} src={trig} />
 
                     <div className={styles.btnContainer}>
-                        <button className={styles.btn} ><span className={styles.span_arrow} >&gt;</span></button>
+                        <button className={styles.btn} onClick={() => document.getElementById("about").scrollIntoView()}><span className={styles.span_arrow} >&gt;</span></button>
                     </div>
                 </div>
             </section>

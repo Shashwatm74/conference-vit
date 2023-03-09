@@ -23,3 +23,29 @@
     @include nav-font;
 
 }
+
+
+.nav>ul>li>a:link,
+.nav>ul>li>a:visited {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.nav>ul>li>a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    bottom: -4px;
+    left: 0;
+    transform: scale(0);
+    transition: 0.2s all ease-out;
+}
+
+.nav>ul>li>a:hover::after {
+    transform: scale(1);
+
+}
