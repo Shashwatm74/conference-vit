@@ -32,7 +32,7 @@
 .button{
     z-index: 100;
     position: absolute;
-    background-color: $tertiary-color;
+    background-color: red; //temporary 
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
@@ -50,7 +50,7 @@
 }
 
 .namecontainer{
-    background-color: $primary-color ;
+    background-color: $tertiary-color ;
     height :55%;
     width :max(70%,400px);
     transform: translate(50px,-150px);
@@ -59,7 +59,7 @@
 }
 
 .detailcontainer{
-    background-color: $primary-color ;
+    background-color: $tertiary-color ;
     margin-top: -92px;
     height :80%;
     width :max(70%,400px);
@@ -67,22 +67,4 @@
     transition: .5s ease;
 }
 
-// .button{
-//     z-index: 100;
-//     position: absolute;
-//     background-color: $tertiary-color;
-//     height: 10vh;
-//     width: 10vh;
-//     border-radius: 50%;
-//     cursor: pointer;
-//     margin-top: -50px;
-//     margin-left: 610px;
-// }
 
-// .button:hover .namecontainer{
-//     height:65%;
-// }
-
-// .button:hover .detailcontainer{
-//     height:65%;
-// }
