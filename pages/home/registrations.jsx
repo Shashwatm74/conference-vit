@@ -8,7 +8,7 @@ function Registration() {
         <>
 
             <section className={styles.registration} id="registrations">
-                About
+                Registrations
             </section>
         </>
     )
