@@ -1,5 +1,5 @@
 @mixin section {
-    height: 100vh;
+    height: max(700px, 100vh);
 }
 
 @mixin nav-font {

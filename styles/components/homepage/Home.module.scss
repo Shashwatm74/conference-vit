@@ -10,8 +10,7 @@
 
 .home {
     @include section;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+
 }
 
 .container {
@@ -22,7 +21,7 @@
     background-color: $secondary-color;
     margin-left: 24vh;
     width: max(80%, 800px);
-    height: max(80%, 420px);
+    height: max(80%, 600px);
     border-radius: 20px;
     margin-top: 0.01rem;
 }
@@ -31,13 +30,14 @@
     text-align: center;
     grid-column: 2;
     grid-row: 3;
+
 }
 
 
 .btn {
     background-color: $tertiary-color;
-    height: 8vh;
-    width: 8vh;
+    height: 4.7em;
+    width: 4.7em;
     border-radius: 50%;
     cursor: pointer;
 }
