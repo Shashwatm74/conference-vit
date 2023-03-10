@@ -1,58 +1,57 @@
 @import '@/styles/abstract/mixin';
 @import '@/styles/abstract/variable';
 
-.card{
+.card {
     margin-top: 200px;
     background-color: $secondary-color;
     margin-left: 90vh;
-    width: max(15%, 150px);
-    height: max(50%, 360px);
+    width: 230px;
+    height: 375px;
     border-radius: 15px;
-    overflow : hidden;
+    overflow: hidden;
 }
 
 .container {
-    z-index: 1;
-    top: 280px;
-    left: -50px;
-    position:relative;
-    background-color: transparent;
     display: grid;
-    width: max(50%,500px);
-    height: 400px;
-    grid-template-rows:repeat(2, 23%) 15px;
-    row-gap: 4px;
     text-align: center;
+    z-index: 1;
+    top: 300px;
+    width: max(80%, 450px);
+    height: 600px;
+    grid-template-rows: 17% 30%;
+    row-gap: 4px;
+    left: -30px;
+    position: relative;
+    background-color: transparent;
     rotate: calc(-20deg);
-    animation:forwards;
+    animation: forwards;
     transition: .5s ease;
 }
 
-.button{
+.button {
     z-index: 100;
     position: relative;
-    background-color: red; //temporary 
+    margin-top: 500px;
+    margin-left: 200px;
     height: 10vh;
     width: 10vh;
+    background-color: red; //temporary 
     border-radius: 50%;
     cursor: pointer;
-    margin-top: 500px;
-    margin-left:200px;
 }
 
-.card:hover .container{
+.card:hover .container {
     top: 40%;
 }
 
-.namecontainer{
-    background-color:$tertiary-color ;
-    width :max(70%,500px);  
+.namecontainer {
+    background-color: $tertiary-color ;
+    width: max(70%, 500px);
+
 }
 
-.detailcontainer{
-    background-color:$tertiary-color ;
-    width :max(70%,500px);
+.detailcontainer {
+    background-color: $tertiary-color ;
+    width: max(70%, 500px);
     height: 200px;
 }
-
-
