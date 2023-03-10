@@ -8,16 +8,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 function Schedule() {
-    // const sectionRef = useRef(null);
+
     const headingRef = useRef(null);
     const card1Ref = useRef(null);
     const card2Ref = useRef(null);
     const card3Ref = useRef(null);
     const lnUnHzRef = useRef(null);
 
-    // for (i=0,i<6,i++){
 
-    // }
 
     useEffect(() => {
 

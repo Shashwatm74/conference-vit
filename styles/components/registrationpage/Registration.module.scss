@@ -3,79 +3,70 @@
 
 .registration {
     @include section;
-}
-
-
-.container {
-    max-width: 4000px;
-    grid-gap: 10px;
     display: grid;
-    background-color: transparent;
-    color: #444;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15% 85%;
+    justify-items: center;
+    column-gap: 2em;
+}
+
+.cards_right {
+    grid-column: 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 30%;
+    padding-right: 2em;
+}
+
+.cards_left {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 45%;
+    padding-left: 2em;
+}
+
+.heading {
+    place-items: center;
     text-align: center;
-    display: flex;
-    padding: 20px;
-    margin: auto;
-    width: 50%;
-
-
+    grid-column: 2/ span 2;
 }
 
-.column1 {
-    font-size: 5rem;
-    font-family: $text-font;
-    background-color: $secondary-color;
-    position: relative;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 10000px;
-    cursor: pointer;
-
-}
-
-.column2 {
-    font-size: 5rem;
-    font-family: $text-font;
-    background-color: #D3D3D3;
-    position: relative;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 10000px;
-    cursor: pointer;
-
-}
-
-.head {
-    font-size: 25px;
-}
-
-.content1 {
-    font-size: 15px;
+.card1 {
+    max-width: 100%;
+    min-width: 16em;
+    height: 27em;
+    margin-top: 7em;
+    border-radius: 5%;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: "Golos Text", sans-serif;
 }
 
-.content2 {
-    font-size: 15px;
+.card1>p {
+    text-align: left;
+    padding: 3em 1em 0em 1em;
+    color: aliceblue;
     font-family: "Golos Text", sans-serif;
+    font-weight: 1000;
 }
 
-.image {
-    background-color: transparent;
-    grid-column: 1;
-    grid-row: 1;
+.card2 {
+    min-width: 16em;
+    max-width: 100%;
+    margin-top: 7em;
+    height: 27em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #b8ff65;
+    border-radius: 5%;
+
 }
 
-.sectioned_content {
-    grid-template-columns: 2fr 1fr;
-    background-color: transparent;
+.card2>p {
+    color: black;
     font-family: "Golos Text", sans-serif;
-
-}
-
-.img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
+    padding: 3em 1em 0em 1em;
+    font-weight: 1200;
+    font-weight: bold;
 }
