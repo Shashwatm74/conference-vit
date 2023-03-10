@@ -6,65 +6,53 @@
     background-color: $secondary-color;
     margin-left: 90vh;
     width: max(15%, 150px);
-    height: max(55%, 420px);
+    height: max(50%, 360px);
     border-radius: 15px;
     overflow : hidden;
-
 }
 
 .container {
     z-index: 1;
-    top: 215px;
-    left: -30px;
+    top: 280px;
+    left: -50px;
     position:relative;
     background-color: transparent;
     display: grid;
-    margin-top: 17vh;
-    width: max(70%,400px);
+    width: max(50%,500px);
     height: 400px;
-    grid-template-columns: 100%;
-    grid-template-rows: 40%,60%;
+    grid-template-rows:repeat(2, 23%) 15px;
+    row-gap: 4px;
     text-align: center;
     rotate: calc(-20deg);
-    row-gap:5px;
+    animation:forwards;
+    transition: .5s ease;
 }
 
 .button{
     z-index: 100;
-    position: absolute;
+    position: relative;
     background-color: red; //temporary 
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
     cursor: pointer;
-    margin-top: -50px;
-    margin-left: 610px;
+    margin-top: 500px;
+    margin-left:200px;
 }
 
-.card:hover .namecontainer{
-    height: 100%;
-}
-
-.card:hover .detailcontainer{
-    height: 100%;
+.card:hover .container{
+    top: 40%;
 }
 
 .namecontainer{
-    background-color: $tertiary-color ;
-    height :55%;
-    width :max(70%,400px);
-    transform: translate(50px,-150px);
-    transition: .5s ease;
-    
+    background-color:$tertiary-color ;
+    width :max(70%,500px);  
 }
 
 .detailcontainer{
-    background-color: $tertiary-color ;
-    margin-top: -92px;
-    height :80%;
-    width :max(70%,400px);
-    transform: translate(50px,-150px);
-    transition: .5s ease;
+    background-color:$tertiary-color ;
+    width :max(70%,500px);
+    height: 200px;
 }
 
 

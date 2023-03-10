@@ -8,11 +8,11 @@ function Footer() {
                 <div className={styles.rows}> 
                     <div>
                         <img className={styles.image} src="" alt="Logo" />
-                    </div> 
-                    <div className={styles.link1}>Facebook</div>
-                    <div className={styles.link1}>Instagram</div>
-                    <div className={styles.link1}>Twitter</div>
-                    <div className={styles.link1}>Youtube</div>
+                    </div>
+                        <div className={styles.link1}>Facebook</div>
+                        <div className={styles.link1}>Instagram</div>
+                        <div className={styles.link1}>Twitter</div>
+                        <div className={styles.link1}>Youtube</div> 
                 </div> 
                 <div className={styles.copyright}>
                     <hr />
