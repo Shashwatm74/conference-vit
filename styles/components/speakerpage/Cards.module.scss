@@ -1,70 +1,57 @@
 @import '@/styles/abstract/mixin';
 @import '@/styles/abstract/variable';
 
-.card{
+.card {
     margin-top: 200px;
     background-color: $secondary-color;
     margin-left: 90vh;
-    width: max(15%, 150px);
-    height: max(55%, 420px);
+    width: 230px;
+    height: 375px;
     border-radius: 15px;
-    overflow : hidden;
-
+    overflow: hidden;
 }
 
 .container {
-    z-index: 1;
-    top: 215px;
-    left: -30px;
-    position:relative;
-    background-color: transparent;
     display: grid;
-    margin-top: 17vh;
-    width: max(70%,400px);
-    height: 400px;
-    grid-template-columns: 100%;
-    grid-template-rows: 40%,60%;
     text-align: center;
+    z-index: 1;
+    top: 300px;
+    width: max(80%, 450px);
+    height: 600px;
+    grid-template-rows: 17% 30%;
+    row-gap: 4px;
+    left: -30px;
+    position: relative;
+    background-color: transparent;
     rotate: calc(-20deg);
-    row-gap:5px;
+    animation: forwards;
+    transition: .5s ease;
 }
 
-.button{
+.button {
     z-index: 100;
-    position: absolute;
-    background-color: red; //temporary 
+    position: relative;
+    margin-top: 500px;
+    margin-left: 200px;
     height: 10vh;
     width: 10vh;
+    background-color: red; //temporary 
     border-radius: 50%;
     cursor: pointer;
-    margin-top: -50px;
-    margin-left: 610px;
 }
 
-.card:hover .namecontainer{
-    height: 100%;
+.card:hover .container {
+    top: 40%;
 }
 
-.card:hover .detailcontainer{
-    height: 100%;
-}
-
-.namecontainer{
+.namecontainer {
     background-color: $tertiary-color ;
-    height :55%;
-    width :max(70%,400px);
-    transform: translate(50px,-150px);
-    transition: .5s ease;
-    
+    width: max(70%, 500px);
+
 }
 
-.detailcontainer{
+.detailcontainer {
     background-color: $tertiary-color ;
-    margin-top: -92px;
-    height :80%;
-    width :max(70%,400px);
-    transform: translate(50px,-150px);
-    transition: .5s ease;
+    width: max(70%, 500px);
+    height: 200px;
 }
-
-
