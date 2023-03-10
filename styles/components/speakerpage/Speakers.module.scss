@@ -1,6 +1,17 @@
 @import '@/styles/abstract/mixin';
 @import '@/styles/abstract/variable';
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
 .speakers {
     @include section;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    justify-items: center;
+    text-align: center;
+    column-gap: 1em;
+}
+
+.heading span {
+    background-color: #b8ff65;
 }
