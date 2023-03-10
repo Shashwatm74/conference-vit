@@ -1,6 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
-import styles from '@/styles/components/registrationpage/Registration.module.scss'
+import styles from '@/styles/components/registrationpage/Registration.module.scss';
 
 
 function Registration() {
@@ -9,6 +8,7 @@ function Registration() {
 
             <section className={styles.registration} id="registrations">
                 Registrations
+
             </section>
         </>
     )

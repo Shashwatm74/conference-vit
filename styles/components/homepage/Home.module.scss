@@ -3,41 +3,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Source+Code+Pro:ital@1&display=swap');
 
 @mixin image-size {
-    height: 25vh;
-    width: 25vh;
+    height: 10rem;
+    width: 10rem;
     place-self: center;
 }
 
 .home {
     @include section;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    display: grid;
+    // place-items: center;
+
 }
 
 .container {
-
     display: grid;
     grid-template-columns: repeat(3, 33.33333%);
     grid-template-rows: repeat(2, 47%) 30px;
     background-color: $secondary-color;
-    margin-left: 24vh;
-    width: max(80%, 800px);
-    height: max(80%, 420px);
+    width: max(80%, 300px);
+    height: max(80%, 600px);
     border-radius: 20px;
-    margin-top: 0.01rem;
+    transform: translate(0, -80px);
+    place-self: center;
+
 }
 
 .btnContainer {
     text-align: center;
     grid-column: 2;
     grid-row: 3;
+
 }
 
 
 .btn {
     background-color: $tertiary-color;
-    height: 8vh;
-    width: 8vh;
+    height: 4.7em;
+    width: 4.7em;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -75,13 +77,15 @@
 }
 
 .btop {
+    @include nav-font;
     position: fixed;
-    margin-top: 32em;
+    z-index: 99;
+    margin-top: 30em;
+    place-self: left;
+    margin-left: -2.5em;
     padding-bottom: 4px;
-    margin-left: -2.8em;
     transform: rotate(-90deg);
     cursor: pointer;
-    @include nav-font;
 }
 
 

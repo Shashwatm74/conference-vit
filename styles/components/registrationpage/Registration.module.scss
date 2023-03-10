@@ -4,3 +4,8 @@
 .registration {
     @include section;
 }
+
+.hello {
+    font-family: $text-font;
+    font-size: 50rem;
+}
