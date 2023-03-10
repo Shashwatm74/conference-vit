@@ -4,3 +4,67 @@
 .registration {
     @include section;
 }
+.container {
+    max-width: 4000px;
+    grid-gap: 10px;
+    display: grid;
+    background-color:transparent;
+	color: #444;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    text-align : center;
+    display : flex;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+
+}
+.column1 {
+    font-size: 5rem;
+    font-family: $text-font;
+    background-color: $secondary-color;
+    position : relative;
+    border-radius: 5px;
+	padding: 20px;
+    max-width: 10000px;
+    cursor: pointer;
+
+}
+.column2 {
+    font-size: 5rem;
+    font-family: $text-font;
+    background-color: #D3D3D3;
+    position : relative;
+    border-radius: 5px;
+	padding: 20px;
+    max-width : 10000px;
+    cursor: pointer;
+}
+
+.head {
+    font-size: 25px;
+}
+.content1 {
+    font-size: 15px;
+    font-family: "Golos Text", sans-serif;
+}
+.content2 {
+    font-size : 15px;
+    font-family: "Golos Text", sans-serif;
+}
+.image {
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 1;
+}
+.sectioned_content {
+    grid-template-columns: 2fr 1fr;
+    background-color: transparent;
+    font-family: "Golos Text", sans-serif;
+
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
