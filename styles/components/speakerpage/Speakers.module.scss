@@ -12,6 +12,18 @@
     column-gap: 1em;
 }
 
+.card_gallery_wrap {
+    width: 70%;
+
+}
+
+.card_carousel {
+    overflow-x: hidden;
+    display: flex;
+    gap: 5em;
+
+}
+
 .heading span {
     background-color: #b8ff65;
 }

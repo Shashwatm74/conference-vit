@@ -9,10 +9,31 @@ import Schedule from './home/schedule';
 import Registration from './home/registrations';
 import Contact from './home/contact';
 import Script from 'next/script';
+import PageLoader from '@/components/pageloader';
 
 
 
 export default function Home() {
+  ///////////////////// code for preloader / page loader 
+
+  const [preloader, setPreloader] = useState(true);
+  const [timer, setTimer] = useState(3);
+  const id = useRef(null);
+  const clear = () => {
+    window.setInterval(id.current);
+    setPreloader(false);
+  }
+  useEffect(() => {
+    id.current = window.setInterval(() => {
+      setTimer(timer => timer - 1)
+    }, 1000)
+  }, []);
+
+  useEffect(() => {
+    if (timer === 0) {
+      clear();
+    }
+  }, [timer]);
 
   return (
     <>
@@ -21,17 +42,32 @@ export default function Home() {
         <title> VIT Conference </title>
         <meta name="description" content="Conference on Linear Algebra" />
         <link rel="icon" href="/favicon.ico" />
-
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></Script>
       </Head>
-      <Homepage />
-      <About />
-      <Speakers />
-      <Schedule />
-      <Registration />
-      <Contact />
+      {preloader ?
+        <div className="pageload">
 
+          <h1> Loading...</h1>
 
+        </div>
+
+        :
+        (
+          <div>
+
+            <Homepage />
+            <About />
+            <Speakers />
+            <Schedule />
+            <Registration />
+            <Contact />
+          </div >
+
+        )}
 
     </>
+
+
   )
 }
+

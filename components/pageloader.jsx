@@ -4,7 +4,7 @@ import styles from '@/styles/Pageloader.module.scss'
 
 function PageLoader() {
     return (
-        <div>PageLoader</div>
+        <div className={styles.text}>PageLoader</div>
     )
 }
 
