@@ -26,15 +26,15 @@ function Cards(
             gsap.fromTo(cardRef.current,
                 {
 
-                    x: 600,
-                    delay: 1
+                    // x: 600,
+                    // delay: 1
                 },
                 {
-                    duration: 5,
-                    scrub: 1,
-                    delay: 1,
-                    ease: "none",
-                    x: -1600,
+                    // duration: 5,
+                    // scrub: 1,
+                    // delay: 1,
+                    // ease: "none",
+                    // x: -1600,
                     scrollTrigger: {
                         markers: true, //can be used to debug
                         trigger: cardRef.current,
