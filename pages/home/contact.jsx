@@ -7,7 +7,7 @@ function Contact() {
     return (
         <>
 
-            <section className={styles.contact} id="contact" >
+            <section data-scroll-section className={styles.contact} id="contact" >
                 Contact
             </section>
         </>

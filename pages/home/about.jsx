@@ -140,7 +140,7 @@ function About() {
 
   return (
     <>
-      <section className={styles.about} id="about">
+      <section data-scroll-section className={styles.about} id="about">
 
 
         <div ref={headingRef} className={styles.heading}>

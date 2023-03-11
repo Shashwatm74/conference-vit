@@ -13,11 +13,12 @@ import PageLoader from '@/components/pageloader';
 
 
 
+
 export default function Home() {
   ///////////////////// code for preloader / page loader 
 
   const [preloader, setPreloader] = useState(true);
-  const [timer, setTimer] = useState(3);
+  const [timer, setTimer] = useState(1);
   const id = useRef(null);
   const clear = () => {
     window.setInterval(id.current);
@@ -44,26 +45,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></Script>
       </Head>
-      {preloader ?
-        <div className="pageload">
+      {/* {preloader ?
+        // <div className="pageload">
 
-          <h1> Loading...</h1>
+        //   <h1> Loading...</h1>
 
-        </div>
+        // </div>
 
-        :
-        (
-          <div>
+        // :
+        // (
+        //   <div data-scroll-container> */}
 
-            <Homepage />
-            <About />
-            <Speakers />
-            <Schedule />
-            <Registration />
-            <Contact />
-          </div >
+      <Homepage />
+      <About />
+      <Speakers />
+      <Schedule />
+      <Registration />
+      <Contact />
+      {/* </div >
 
-        )}
+        )} */}
 
     </>
 

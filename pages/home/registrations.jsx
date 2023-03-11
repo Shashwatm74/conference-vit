@@ -83,7 +83,7 @@ function Registration() {
     return (
         <>
 
-            <section className={styles.registration} id="registrations">
+            <section data-scroll-section className={styles.registration} id="registrations">
 
                 <div ref={headingRef} className={styles.heading}>
                     <h1>

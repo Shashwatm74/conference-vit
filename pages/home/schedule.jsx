@@ -138,7 +138,7 @@ function Schedule() {
 
     return (
         <>
-            <section className={styles.schedule} id="schedule">
+            <section data-scroll-section className={styles.schedule} id="schedule">
 
 
                 <div ref={headingRef} className={styles.heading}>

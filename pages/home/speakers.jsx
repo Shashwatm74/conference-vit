@@ -90,7 +90,7 @@ function Speakers() {
     return (
         <>
 
-            <section className={styles.speakers} id="speakers">
+            <section data-scroll-section className={styles.speakers} id="speakers">
                 <div ref={headingRef} className={styles.heading}>
                     <h1>
                         "Voices That <span>Inspire:</span><br /> Meet the Speakers Who Will Ignite Your Passion<br /> and Spark Your Imagination"

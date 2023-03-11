@@ -8,7 +8,7 @@ const Nav = () => {
     return (
         <>
 
-            <nav className={styles.nav}>
+            <nav data-scroll-section className={styles.nav}>
                 <ul className={styles.nav}>
                     <div className="logo">
                         <a href="/" replace >

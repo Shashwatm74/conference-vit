@@ -15,6 +15,7 @@
     "eslint-config-next": "13.2.3",
     "gsap": "^3.11.4",
     "jquery": "^3.6.3",
+    "locomotive-scroll": "^4.1.4",
     "mongoose": "^7.0.1",
     "nest": "^0.1.6",
     "next": "13.2.3",
