@@ -12,18 +12,18 @@
 }
 
 .container {
+    display: grid;
+    position:relative;
+    grid-template-rows:repeat(2, 23%) 15px;
+    row-gap: 4px;
     z-index: 1;
     top: 280px;
     left: -50px;
-    position:relative;
-    background-color: transparent;
-    display: grid;
     width: max(50%,500px);
     height: 400px;
-    grid-template-rows:repeat(2, 23%) 15px;
-    row-gap: 4px;
-    text-align: center;
     rotate: calc(-20deg);
+    text-align: center;
+    background-color: transparent;
     animation:forwards;
     transition: .5s ease;
 }
@@ -41,7 +41,7 @@
 }
 
 .card:hover .container{
-    top: 40%;
+    top:110px;
 }
 
 .namecontainer{
