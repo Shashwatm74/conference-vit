@@ -32,13 +32,18 @@
 
 .button {
     z-index: 100;
-    position: relative;
-    margin-top: 500px;
-    margin-left: 200px;
-    height: 10vh;
-    width: 10vh;
-    background-color: red; //temporary 
+    grid-row: 1;
+    margin-top: 5px;
+    margin-left: 302px;
+    height: 15px;
+    width: 15px;
+    font-size: 14px;
+    font-family: $heading-font;
+    background-color:transparent; //temporary 
+    border: solid 0.5px $fourth-color;
+    color:$fourth-color;
     border-radius: 50%;
+    transform: rotate(19deg);
     cursor: pointer;
 }
 
@@ -56,9 +61,12 @@
 }
 
 .detailcontainer {
+    display: grid;
+    grid-template-rows: 12% 88%;
     background-color: $tertiary-color ;
     width: max(70%, 500px);
     height: 200px;
-    padding-top: 1em;
+    padding-top: 0;
     color: $primary-color;
 }
+
