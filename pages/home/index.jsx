@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState,useEffect,useRef} from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import styles from '@/styles/components/homepage/Home.module.scss';
@@ -9,8 +9,8 @@ import trig from '@/public/trigonometry.png';
 
 
 
-
 function HomePage() {
+    const backToTopRef = useRef(null);
     return (
         <>
 
@@ -19,9 +19,9 @@ function HomePage() {
                 <meta name="description" content="Conference on Linear Algebra" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <section className={styles.home}>
+            <section data-scroll-section className={styles.home}>
 
-                <div className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><a>Back to top</a> &gt;</div>
+                <div ref ={ backToTopRef} className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><a>Back to top</a> &gt;</div>
 
                 <div className={styles.container}>
                     <Image className={styles.image1} src={formula} />

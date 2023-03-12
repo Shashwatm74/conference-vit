@@ -2,11 +2,11 @@
 @import '@/styles/abstract/variable';
 
 
+
 .footer{
     height:fit-content;
-    background-color: $tertiary-color;
-    height:18vh;
-    padding:10px 0;
+    background-color: $tertiary-color; 
+    
 }
 
 .container{
@@ -16,10 +16,9 @@
 }
 
 .rows{
-
     display:flex;
-    flex-wrap: wrap;
-    column-gap: 20vh;
+    //flex-wrap: wrap;
+    padding-top: 2em;
     justify-content: space-around; 
 
 }
@@ -27,7 +26,8 @@
 .copyright{
     color: gray;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
+    padding-bottom: 10px;
 }
 
 .link1{
@@ -35,3 +35,4 @@
     color:$primary-color;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+

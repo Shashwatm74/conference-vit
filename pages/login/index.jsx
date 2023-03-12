@@ -11,7 +11,7 @@ function Login() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <section className={styles.login}>
+            <section data-scroll-section className={styles.login}>
                 <div className={styles.login_container}>
                     <div className={styles.login_card_wrapper}>
                         <div><span className={styles.span_heading}>Login</span></div>

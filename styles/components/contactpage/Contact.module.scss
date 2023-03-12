@@ -2,5 +2,5 @@
 @import '@/styles/abstract/variable';
 
 .contact {
-    @include section;
+    height: max(350px, 50vh);
 }
