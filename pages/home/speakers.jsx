@@ -99,13 +99,11 @@ function Speakers() {
                 <div className={styles.card_gallery_wrap}>
 
                     <div className={styles.card_carousel}>
-                        {speakers.map((speakers, index) => (
+                        {speakers.map((speakers) => (
 
                             < Cards cardRef={cardRef}
                                 key={speakers.id}
-                                index={index}
                                 {...speakers}
-                            // updateActiveSpeaker={index => setActiveSpeaker(index + 1)}
                             />
                         ))}
                     </div>

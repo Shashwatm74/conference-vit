@@ -153,7 +153,9 @@ function About() {
 
         <div className={styles.cards_left}>
           <div ref={card1Ref} className={styles.card1}>
-            <p>We were in top 30 of Celo's Great Stake Oil competition</p>
+            <p>
+              We were in top 30 of Celo's Great Stake Oil competition
+            </p>
           </div>
           <div ref={card3Ref} className={styles.card3}>
             <p>

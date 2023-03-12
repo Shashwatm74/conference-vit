@@ -38,7 +38,7 @@ function Cards(
                     ease: "power4.inOut",
                     x: 0,
                     scrollTrigger: {
-                        markers: true, //can be used to debug
+                        // markers: true, //can be used to debug
                         trigger: cardRef.current,
                         start: "top center",
 
