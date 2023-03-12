@@ -57,9 +57,11 @@ function Cards(
                     <div className={styles.image}></div>
                     <div className={styles.container}>
                         <div className={styles.namecontainer} >{name}</div>
-                        <div className={styles.detailcontainer}>{details}</div>
+                        <div className={styles.detailcontainer}>
+                            <div>{details}</div> 
+                            <div className={styles.button}>^</div>
+                        </div>
                     </div>
-                    <div className={styles.button}></div>
                 </div>
             </div>
 
