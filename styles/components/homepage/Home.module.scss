@@ -12,11 +12,7 @@
     @include section;
     transform: translate(0);
     display: grid;
-    // grid-template-columns: repeat(4, 10fr);
-    // grid-template-rows: repeat(3,10fr);
-    justify-items: center;
-    grid-template-columns: repeat(3,100%) ;
-    grid-template-rows: 100%;
+ 
 }
 .titleContainer > h2 {
     text-align: center;

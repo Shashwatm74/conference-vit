@@ -4,7 +4,7 @@
 
 .about {
   @include section;
-  // transform: translate(0);
+  transform: translate(-39deg);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 15% 85%;

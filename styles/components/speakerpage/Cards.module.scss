@@ -45,6 +45,7 @@
     border-radius: 50%;
     transform: rotate(19deg);
     cursor: pointer;
+    user-select: none;
 }
 
 .card:hover .container {
