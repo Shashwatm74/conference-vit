@@ -1,4 +1,4 @@
-import React ,{useState,useEffect,useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import styles from '@/styles/components/homepage/Home.module.scss';
@@ -21,13 +21,16 @@ function HomePage() {
             </Head>
             <section data-scroll-section className={styles.home}>
 
-                <div ref ={ backToTopRef} className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><a>Back to top</a> &gt;</div>
+                <div ref={backToTopRef} className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><a>Back to top</a> &gt;</div>
 
                 <div className={styles.container}>
                     <Image className={styles.image1} src={formula} />
                     <Image className={styles.image2} src={func} />
                     <Image className={styles.image3} src={meth} />
                     <Image className={styles.image4} src={trig} />
+                    <h1 className={styles.title}>Mathematical Frontier Symposium</h1>
+                    <h3 className={styles.subtitle} >Transforming Ideas into Solutions: Collaborating to Shape the Future of Mathematics</h3>
+
 
                     <div className={styles.btnContainer}>
                         <button className={styles.btn} onClick={() => document.getElementById("about").scrollIntoView()}><span className={styles.span_arrow} >&gt;</span></button>
