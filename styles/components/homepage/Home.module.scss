@@ -10,18 +10,27 @@
 
 .home {
     @include section;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+}
+
+.titleContainer>h2 {
+    text-align: center;
+    font-family: $text-font;
+}
+
+.titleContainer>h1 {
+    text-align: center;
+    font-family: $text-font;
 }
 
 .container {
-
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 33.33333%);
     grid-template-rows: repeat(2, 47%) 30px;
     background-color: $secondary-color;
     margin-left: 24vh;
-    width: max(80%, 800px);
+    margin-right: 24vh;
+    width: max(80%, 80px);
     height: max(80%, 420px);
     border-radius: 20px;
     margin-top: 0.01rem;

@@ -24,6 +24,7 @@ function HomePage() {
                 <div ref={backToTopRef} className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><a>Back to top</a> &gt;</div>
 
                 <div className={styles.container}>
+
                     <Image className={styles.image1} src={formula} />
                     <Image className={styles.image2} src={func} />
                     <Image className={styles.image3} src={meth} />

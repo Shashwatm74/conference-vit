@@ -2,6 +2,11 @@
 @import '@/styles/abstract/variable';
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
+@mixin image-size {
+    height: 25vh;
+    width: 25vh;
+    place-self: center;
+}
 .schedule {
     @include section;
     display: grid;
@@ -11,7 +16,22 @@
     column-gap: 1em;
 }
 
-
+.image1{
+    @include image-size();
+    grid-column: 4;
+    object-fit: cover;
+    grid-row: 1;
+    margin-right: 92%;
+    transform: rotate(-15deg);
+}
+.image2{
+    @include image-size();
+    grid-column: 2;
+    object-fit: cover;
+    grid-row: 3;
+    margin-right: 92%;
+    transform: rotate(-15deg);
+}
 .cards_right {
     grid-column: 3;
     grid-row: 2;
