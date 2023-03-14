@@ -13,6 +13,14 @@
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 }
+.titleContainer > h2 {
+    text-align: center;
+    font-family: $text-font;
+}
+.titleContainer > h1{
+    text-align: center;
+    font-family: $text-font;
+}
 
 .container {
 

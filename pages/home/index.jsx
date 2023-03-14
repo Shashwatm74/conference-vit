@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React ,{useState,useEffect,useRef} from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -24,6 +25,10 @@ function HomePage() {
                 <div ref ={ backToTopRef} className={styles.btop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><a>Back to top</a> &gt;</div>
 
                 <div className={styles.container}>
+                    <div className={styles.titleContainer}>
+                    <h1>Mathematical Frontier Symposium</h1>
+                    <h2>Transforming Ideas into Solutions: Collaborating to Shape the Future of Mathematics</h2>
+                    </div>
                     <Image className={styles.image1} src={formula} />
                     <Image className={styles.image2} src={func} />
                     <Image className={styles.image3} src={meth} />
