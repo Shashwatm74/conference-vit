@@ -63,7 +63,6 @@
     @include image-size();
     grid-column: 1;
     grid-row: 2;
-    margin-right: 97%;
     transform: rotate(5deg);
 }
 
@@ -79,7 +78,6 @@
     @include image-size();
     grid-column: 3;
     grid-row: 2;
-    margin-left: 88%;
     transform: rotate(12deg);
 }
 
