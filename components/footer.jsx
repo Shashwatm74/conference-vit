@@ -9,14 +9,14 @@ function Footer() {
                     <div>
                         <img className={styles.image} src="" alt="Logo" />
                     </div>
-                        <div className={styles.link1}>Facebook</div>
-                        <div className={styles.link1}>Instagram</div>
-                        <div className={styles.link1}>Twitter</div>
-                        <div className={styles.link1}>Youtube</div> 
-                </div> 
-                <div className={styles.copyright}>
-                    <hr />
-                    &#169; Vellore institute of Technology
+                        <div className={styles.link1}>Convenors</div>
+                        <div className={styles.link1}>Register at</div>
+                        <div className={styles.link1}>Designed and Developed by
+                        </div>
+                    </div> 
+                    <div className={styles.copyright}>
+                        <hr />
+                        &#169; Vellore institute of Technology
                 </div>   
             </div>
         </footer>

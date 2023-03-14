@@ -17,7 +17,6 @@
 
 .rows{
     display:flex;
-    //flex-wrap: wrap;
     padding-top: 2em;
     justify-content: space-around; 
 
@@ -33,6 +32,9 @@
 .link1{
     font-size: 110%;
     color:$primary-color;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    list-style: none;
+    color: $fourth-color;
 }
 

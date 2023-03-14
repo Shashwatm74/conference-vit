@@ -12,13 +12,22 @@
     @include section;
 }
 
-.titleContainer>h2 {
+.title {
     text-align: center;
-    font-family: $text-font;
+    margin-top: 80px;
+    padding-bottom: -20px;
+    width:500px;
+    font-size: 40px;
+    // font-family: $heading-font;
+    text-transform: capitalize;
+
 }
 
-.titleContainer>h1 {
+.subtitle {
     text-align: center;
+    margin-top: -10px;
+    font-size: 22px;
+    width: 500px;
     font-family: $text-font;
 }
 
