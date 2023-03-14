@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useRef } from 'react';
 import styles from '@/styles/components/registrationpage/Registration.module.scss';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
