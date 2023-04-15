@@ -39,9 +39,9 @@
     width: 20px;
     font-size: 20px;
     font-family: $heading-font;
-    background-color:transparent; //temporary 
+    background-color: transparent;
     border: solid 0.5px $fourth-color;
-    color:$fourth-color;
+    color: $fourth-color;
     border-radius: 50%;
     transform: rotate(19deg);
     cursor: pointer;
@@ -70,4 +70,3 @@
     padding-top: 6px;
     color: $primary-color;
 }
-

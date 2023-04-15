@@ -1,12 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useRef } from "react";
-import Image from 'next/image';
-
 import styles from "@/styles/components/schedulepage/Schedule.module.scss";
-import pie from '@/public/piechart.png';
-import comp from '@/public/comp.png';
-
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap";
 
@@ -154,8 +149,7 @@ function Schedule() {
 
                     </h1>
                 </div>
-                <Image className={styles.image1} src={pie} />
-                <Image className={styles.image2} src={comp} />
+                
                 <div className={styles.cards_left}>
                     <div ref={card1Ref} className={styles.card1}>
                         <p>Day 1, <br /> Registration and Welcome Address<br />

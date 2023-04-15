@@ -14,12 +14,23 @@
     display: grid;
  
 }
-.titleContainer > h2 {
+
+.title {
     text-align: center;
-    font-family: $text-font;
+    margin-top: 80px;
+    padding-bottom: -20px;
+    width:500px;
+    font-size: 40px;
+    // font-family: $heading-font;
+    text-transform: capitalize;
+
 }
-.titleContainer > h1{
+
+.subtitle {
     text-align: center;
+    margin-top: -10px;
+    font-size: 22px;
+    width: 500px;
     font-family: $text-font;
 }
 
@@ -64,7 +75,6 @@
     @include image-size();
     grid-column: 1;
     grid-row: 2;
-    margin-right: 97%;
     transform: rotate(5deg);
 }
 
@@ -80,7 +90,6 @@
     @include image-size();
     grid-column: 3;
     grid-row: 2;
-    margin-left: 88%;
     transform: rotate(12deg);
 }
 
