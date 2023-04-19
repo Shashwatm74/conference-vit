@@ -1,0 +1,14 @@
+@import "@/styles/abstract/mixin";
+@import "@/styles/abstract/variable";
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+.profile {
+    @include section;
+    z-index: 1;
+
+}
+
+.sectionWrapper {
+    @include sectionWrapper;
+    height: 95vh;
+}
