@@ -69,7 +69,6 @@ const speakers = [
 function Speakers() {
     const headingRef = useRef(null);
     const cardRef = useRef(null);
-    // const [activeSpeaker, setActiveSpeaker] = useState(1);
     useEffect(() => {
 
         gsap.fromTo(headingRef.current,

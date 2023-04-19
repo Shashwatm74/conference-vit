@@ -16,14 +16,14 @@
 
 .sectionWrapper {
     @include sectionWrapper;
-    height: 105vh;
+    height: 95vh;
 }
 
 .title {
     text-align: center;
     margin-top: 80px;
     padding-bottom: -20px;
-    width:500px;
+    width: 500px;
     font-size: 40px;
     text-transform: capitalize;
     transition: width font-size 2s;
@@ -42,12 +42,11 @@
     justify-items: center;
     display: grid;
     grid-column: 1 / span 12;
-    grid-row: 10/ span 100;
+    grid-row: 10/ span 75;
     grid-template-columns: repeat(3, 33.33333%);
     grid-template-rows: repeat(2, 47%) 30px;
     background-color: $secondary-color;
     border-radius: 20px;
-    margin-top: 0.01rem;
 }
 
 .btnContainer {
@@ -124,74 +123,79 @@
     margin-top: 0.1em;
 
 }
-@media (min-width:320px){
-    .title{
-        width:300px;
+
+@media (min-width:320px) {
+    .title {
+        width: 300px;
         font-size: 30px;
     }
-    .subtitle{
+
+    .subtitle {
         width: 300px;
         font-size: 18px;
     }
+
     .image1 {
-       width: 100px;
-       height: 100px;
+        width: 100px;
+        height: 100px;
     }
-    
+
     .image2 {
         width: 100px;
         height: 100px;
-     }
-    
-     .image3 {
+    }
+
+    .image3 {
         width: 100px;
         height: 100px;
-     }
-    
-     .image4 {
+    }
+
+    .image4 {
         width: 100px;
         height: 100px;
-     }
+    }
 }
-@media(min-width:800px){
+
+@media(min-width:800px) {
     .image1 {
         width: 200px;
         height: 200px;
-     }
-     
-     .image2 {
-         width: 200px;
-         height: 200px;
-      }
-     
-      .image3 {
-         width: 200px;
-         height: 200px;
-      }
-     
-      .image4 {
-         width: 200px;
-         height: 200px;
-      }
+    }
+
+    .image2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image3 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image4 {
+        width: 200px;
+        height: 200px;
+    }
 }
-@media(min-width: 1200px){
+
+@media(min-width: 1200px) {
     .image1 {
         width: 250px;
         height: 250px;
-     }
-     
-     .image2 {
-         width: 250px;
-         height: 250px;
-      }
-     
-      .image3 {
-         width: 250px;
-         height: 250px;
-      }
-     
-      .image4 {
-         width: 250px;
-         height: 250px;
-      }
+    }
+
+    .image2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .image3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .image4 {
+        width: 250px;
+        height: 250px;
+    }
 }

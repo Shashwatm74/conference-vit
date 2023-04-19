@@ -28,18 +28,18 @@ function HomePage() {
           </div>
 
           <div className={styles.container}>
-            <Image className={styles.image1} alt="" src={formula} />
-            <Image className={styles.image2} alt="" src={func} />
-            <Image className={styles.image3} alt="" src={meth} />
-            <Image className={styles.image4} alt="" src={trig} />
+            <Image className={styles.image1} alt="image1" src={formula} />
+            <Image className={styles.image2} alt="image2" src={func} />
+            <Image className={styles.image3} alt="image3" src={meth} />
+            <Image className={styles.image4} alt="image4" src={trig} />
             <h1 className={styles.title}>Mathematical Frontier Symposium</h1>
             <h3 className={styles.subtitle}>
               Transforming Ideas into Solutions: Collaborating to Shape the
-              Future of Mathematics
+              Future of Mathematics
             </h3>
 
             <div className={styles.btnContainer}>
-            <button
+              <button
                 className={styles.btn}
                 onClick={() =>
                   document.getElementById("about").scrollIntoView()
