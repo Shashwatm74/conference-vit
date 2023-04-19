@@ -1,16 +1,92 @@
 @import '@/styles/abstract/mixin';
 @import '@/styles/abstract/variable';
 
-
-.nav>ul {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    width: max(80%, 800px);
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    opacity: 0.98;
+    background: #ffffff;
+    z-index: 1000;
 }
 
-.nav>ul>div {
-    margin-right: 10em;
+.logo {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+
+
+.navToggle {
+    position: absolute;
+    height: 2.4em;
+    width: 2.4em;
+    z-index: 9999;
+    top: 0.9rem;
+    right: 2rem;
+    background: transparent;
+    border: hidden;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .navToggle {
+        display: block;
+    }
+
+    .nav>ul {
+        @include side-bar;
+        transform: translate(100%);
+        transition: 0.3s ease-in-out;
+
+    }
+
+    .nav[data-visible="true"]>ul {
+        @include side-bar;
+        transform: translate(0%);
+        box-shadow: -5px 13px 12px 0px $tertiary-color;
+    }
+
+}
+
+.navToggle[data-visible='true']>.cross {
+    display: block;
+    height: 2em;
+    width: 2em;
+
+}
+
+.navToggle[data-visible='false']>.hamburger {
+    display: block;
+}
+
+.navToggle[data-visible='false']>.cross {
+    display: none;
+}
+
+.navToggle[data-visible='true']>.hamburger {
+    display: none;
+}
+
+.searchbar {
+    @include mix_input_box;
+    visibility: hidden;
+}
+
+.nav {
+    padding-right: min(8%, 4rem);
+}
+
+.nav>ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    inset: 2.69em 0 0 30%;
+    gap: 2em;
 }
 
 .nav>ul>li {
@@ -18,27 +94,25 @@
 
 }
 
-
 .nav>ul>li>a {
     @include nav-font;
 
 }
 
-
+//navigation bar hover effect 
 .nav>ul>li>a:link,
 .nav>ul>li>a:visited {
-    color: #000000;
+    color: $tertiary-color;
     text-decoration: none;
     position: relative;
 }
-
 
 .nav>ul>li>a::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000000;
+    background-color: $tertiary-color;
     bottom: -4px;
     left: 0;
     transform: scale(0);

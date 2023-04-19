@@ -1,7 +1,30 @@
 @mixin section {
     height: max(700px, 100vh);
+    display: flex ;
+    justify-content: center ;
 }
+@mixin sectionWrapper {
+    @media (max-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(200, 8px);
+        width: 70%;
+    }
 
+    @media (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(200, 8px);
+        width: 70%;
+    }
+
+    @media (min-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(200, 8px);
+        width: 70%;
+    }
+}
 @mixin nav-font {
     text-decoration: none;
     font-family: $text-font;
@@ -60,3 +83,33 @@
     font-family: $text-font;
     font-weight: 600;
 }
+
+
+@mixin nav-font {
+    text-decoration: none;
+    font-family: $text-font;
+    font-weight: 600;
+    user-select: none;
+    color: $secondary-color;
+}
+
+@mixin side-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 999;
+    height: 100%;
+    inset: 2.69em 0 0 30%;
+    background-color: $primary-color;
+    opacity: 0.98;
+}
+
+@mixin mix_input_box {
+    padding: 0.3em;
+    border-radius: 5px;
+    margin: 0;
+    width: 250px;
+    font-family: $text-font;
+}
+

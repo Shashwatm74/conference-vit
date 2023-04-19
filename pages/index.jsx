@@ -45,18 +45,9 @@ export default function Home() {
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.ico" />
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></Script>
+        
       </Head>
-      {/* {preloader ?
-        // <div className="pageload">
-
-        //   <h1> Loading...</h1>
-
-        // </div>
-
-        // :
-        // (
-        //   <div data-scroll-container> */}
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></Script>
 
       <Homepage />
       <About />
@@ -64,9 +55,7 @@ export default function Home() {
       <Schedule />
       <Registration />
       <Contact />
-      {/* </div >
-
-        )} */}
+     
 
     </>
 
