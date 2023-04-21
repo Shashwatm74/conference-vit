@@ -1,0 +1,42 @@
+@import "@/styles/abstract/mixin";
+@import "@/styles/abstract/variable";
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+
+.dashboard {
+    @include section;
+    background-color: #F5F7FA;
+
+    @media(min-width: 992px) {
+        margin-left: 370px;
+    }
+}
+
+.sectionWrapper {
+    @include sectionWrapper;
+    height: 95vh;
+
+    @media(min-width:300px) {
+        width: 92%;
+    }
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 24px 16px 24px;
+    gap: 24px;
+    position: fixed;
+    width: 320px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px 0px 0px 8px;
+    z-index: 1001;
+    background: #ffffff;
+
+    @media (max-width:992px) {
+        display: none;
+    }
+}

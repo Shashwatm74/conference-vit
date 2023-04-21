@@ -1,9 +1,12 @@
 @mixin section {
     height: max(700px, 100vh);
-    display: flex ;
-    justify-content: center ;
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 3.6em;
 }
+
 @mixin sectionWrapper {
+
     @media (max-width: 600px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -25,6 +28,9 @@
         width: 70%;
     }
 }
+
+
+
 @mixin nav-font {
     text-decoration: none;
     font-family: $text-font;
@@ -112,4 +118,3 @@
     width: 250px;
     font-family: $text-font;
 }
-

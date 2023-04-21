@@ -17,14 +17,3 @@ body {
     padding: 0;
 
 }
-
-.pageload {
-    background: rgb(137, 255, 0);
-    background: linear-gradient(90deg, rgba(137, 255, 0, 1) 0%, rgba(215, 255, 167, 1) 39%, rgba(137, 255, 0, 1) 100%);
-    display: grid;
-    place-items: center;
-    height: max(50vh, 630px);
-    color: rgb(0, 0, 0);
-    transition: 0.1;
-    font-family: $text-font;
-}
