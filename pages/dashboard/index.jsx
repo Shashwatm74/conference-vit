@@ -14,12 +14,12 @@ export default function Dashboard() {
                 <h1 className={styles.sidebargreeting}>
                     Hello {user}
                 </h1>
-                <Link href="/dashboard/}">Home</Link>
-                <Link href="/dashboard/}">Announcements</Link>
-                <Link href="/dashboard/}">Submissions</Link>
-                <Link href="/dashboard/}">Results</Link>
-                <Link href="/dashboard/}">Contact us </Link>
-                <Link href="/dashboard/}">Privacy Policy</Link>
+                <Link href="/dashboard/" replace>Home</Link>
+                <Link href="/dashboard/announcements}">Announcements</Link>
+                <Link href="/dashboard/submissions/}">Submissions</Link>
+                <Link href="/dashboard/results/}">Results</Link>
+                <Link href="/dashboard/contact-us/}">Contact us </Link>
+                <Link href="/dashboard/privacy-policy/}">Privacy Policy</Link>
 
                 <Link href="/dashboard/profile">profile</Link>
             </aside>

@@ -59,6 +59,11 @@ const Nav = () => {
                                 Login
                             </Link>
                         </li>
+                        <li>
+                            <Link href="/dashboard" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }}>
+                                Dash
+                            </Link>
+                        </li>
 
 
                     </ul>
