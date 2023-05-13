@@ -4,6 +4,8 @@ import Link from 'next/link';
 import styles from '@/styles/components/homepage/Nav.module.scss';
 // import logo from '@/components/images/logo.png';
 import navtoggle from '@/components/navtoggle.js';
+import Image from 'next/image';
+
 
 const Nav = () => {
     return (
@@ -12,8 +14,7 @@ const Nav = () => {
             <header className={styles.header}>
                 <div className={styles.logo} >
                     <Link href="/" replace >
-                        {/* <h1 classname>vrefer</h1> */}
-                        {/* <Image src={} width={128} height={50} /> */}
+                        <Image width={128} height={50} />
                     </Link>
                 </div>
 
@@ -45,9 +46,9 @@ const Nav = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="/#registrations" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
+                            <Link href="/home/registrations" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
                                 Registration
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="/#contact" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
@@ -60,11 +61,10 @@ const Nav = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/dashboard" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }}>
+                            <Link href="/dashboard/administrator" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }}>
                                 Dash
                             </Link>
                         </li>
-
 
                     </ul>
                 </nav>

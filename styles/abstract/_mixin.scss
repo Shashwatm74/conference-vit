@@ -118,3 +118,9 @@
     width: 250px;
     font-family: $text-font;
 }
+
+@mixin dashboard_cards {
+    border-radius: 5px;
+    position: relative;
+    background-color: $primary-color;
+}
