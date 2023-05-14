@@ -5,7 +5,7 @@ import styles from "@/styles/components/dashboard/administrator/PrivacyPolicy.mo
 export default function PrivacyPolicy() {
     return (
         <>
-            <section section data-scroll-section className={styles.profile} id="privacyPolicy">
+            <section section data-scroll-section className={styles.privacyPolicy} id="privacyPolicy">
                 <div className={styles.sectionWrapper}>
 
                 </div>

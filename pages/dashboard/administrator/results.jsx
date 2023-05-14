@@ -4,7 +4,7 @@ import styles from "@/styles/components/dashboard/administrator/Results.module.s
 export default function Results() {
     return (
         <>
-            <section section data-scroll-section className={styles.profile} id="results">
+            <section section data-scroll-section className={styles.results} id="results">
                 <div className={styles.sectionWrapper}>
 
                 </div>

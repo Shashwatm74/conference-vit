@@ -6,7 +6,7 @@ import styles from "@/styles/components/dashboard/administrator/Contactus.module
 export default function Contacts() {
     return (
         <>
-            <section section data-scroll-section className={styles.profile} id="contactUs">
+            <section section data-scroll-section className={styles.contactUs} id="contactUs">
                 <div className={styles.sectionWrapper}>
 
                 </div>

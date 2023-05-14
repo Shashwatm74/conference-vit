@@ -26,6 +26,7 @@ function SignUp() {
                         <input className={styles.input_box} placeholder='Enter password..' required />
                         <button className={styles.green_button}>Submit</button>
                         <div className={styles.signup_text}>Already have an account?<span className={styles.signup_link}> <a href='/login/'> Login</a></span></div>
+                        <div className={styles.additional_options}>Sign up with<button>google</button></div>
                     </div>
                 </div>
 

@@ -5,7 +5,7 @@ import styles from "@/styles/components/dashboard/administrator/Submissions.modu
 export default function Submissions() {
     return (
         <>
-            <section section data-scroll-section className={styles.profile} id="submissions">
+            <section section data-scroll-section className={styles.submissions} id="submissions">
                 <div className={styles.sectionWrapper}>
 
                 </div>

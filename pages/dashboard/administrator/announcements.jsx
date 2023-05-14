@@ -4,7 +4,7 @@ import styles from "@/styles/components/dashboard/administrator/Announcements.mo
 export default function Announcements() {
     return (
         <>
-            <section section data-scroll-section className={styles.profile} id="announcements">
+            <section section data-scroll-section className={styles.announcements} id="announcements">
                 <div className={styles.sectionWrapper}>
 
                 </div>
