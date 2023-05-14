@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@geist-ui/react": "^2.2.5",
     "animate-sass": "^0.8.2",
     "bcrypt": "^5.1.0",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
+    "firebase": "^9.22.0",
+    "firebase-admin": "^11.8.0",
     "gsap": "^3.11.4",
     "jquery": "^3.6.3",
     "locomotive-scroll": "^4.1.4",

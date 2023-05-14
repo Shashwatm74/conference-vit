@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '@/styles/components/login_and_signup_page/Signup.module.scss'
 import Head from 'next/head';
-
+// const auth = useAuth()
+//<button onClick = {(e) => auth.signinwithGoogle()}>SingIN</button>
 function SignUp() {
     return (
         <>
