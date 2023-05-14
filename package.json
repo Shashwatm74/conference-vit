@@ -18,6 +18,7 @@
     "firebase-admin": "^11.8.0",
     "gsap": "^3.11.4",
     "jquery": "^3.6.3",
+    "js-cookie": "^3.0.5",
     "locomotive-scroll": "^4.1.4",
     "mongoose": "^7.0.1",
     "nest": "^0.1.6",
