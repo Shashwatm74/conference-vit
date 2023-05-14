@@ -1,24 +1,48 @@
+import React from 'react';
+import { useRouter } from 'next/router';
 import '@/styles/globals.scss';
 import Nav from '@/components/nav';
 import Footer from '@/components/footer';
-// import useLocoScroll from '@/hook/useLocoScroll';
 import { AuthProvider } from "@/lib/auth.js";
+import Sidebar from '@/components/dashsidebar';
+
+
 
 export default function App({ Component, pageProps }) {
-  // useLocoScroll();
-  return (
-    <>
-      <AuthProvider>
+  const router = useRouter();
+  let dashBoard = router.route;
 
-        {/* <div data-scroll-container> */}
+  console.log(dashBoard);
+  if (dashBoard.match("/dashboard")) {
+    dashBoard = true;
+  }
+  else {
+    dashBoard = false;
+  }
 
-        <Nav />
+  if (dashBoard) {
+    return (
+      <>
+        <AuthProvider>
+          <Nav />
+          <Component {...pageProps} />
+          <Footer />
+          <Sidebar />
+        </AuthProvider >
+      </>
+    )
+  }
+  else {
+    return (
+      <>
 
-        <Component {...pageProps} />
-        {/* </div> */}
+        <AuthProvider>
+          <Nav />
+          <Component {...pageProps} />
+          <Footer />
+        </AuthProvider >
 
-        <Footer />
-      </AuthProvider >
-    </>
-  )
+      </>
+    )
+  }
 }
