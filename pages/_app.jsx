@@ -7,14 +7,17 @@ export default function App({ Component, pageProps }) {
   // useLocoScroll();
   return (
     <>
-      {/* <div data-scroll-container> */}
+      <ProvideAuth>
 
-      <Nav />
+        {/* <div data-scroll-container> */}
 
-      <Component {...pageProps} />
-      {/* </div> */}
+        <Nav />
 
-      <Footer />
+        <Component {...pageProps} />
+        {/* </div> */}
+
+        <Footer />
+      </ProvideAuth>
     </>
   )
 }
