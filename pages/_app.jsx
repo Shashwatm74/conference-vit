@@ -11,8 +11,6 @@ import Sidebar from '@/components/dashsidebar';
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   let dashBoard = router.route;
-
-  console.log(dashBoard);
   if (dashBoard.match("/dashboard")) {
     dashBoard = true;
   }
