@@ -1,11 +1,8 @@
 
-console.log("navtoggle.js loaded");
 if (typeof window === 'object') {
     const primaryNav = document.getElementById('PrimaryNav');
     const navToggle = document.getElementById('NavToggle');
 
-    console.log(navToggle);
-    console.log(primaryNav);
     {
         // Toggle nav
         navToggle?.addEventListener("click", () => {

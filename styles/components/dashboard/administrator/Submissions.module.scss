@@ -33,3 +33,21 @@
         margin-top: 60px;
     }
 }
+
+.submissionsCard {
+    grid-row: 3 / span 81;
+    grid-column: 1 / span 12;
+    position: relative;
+    background-color: $primary-color;
+    border-radius: 8px;
+    padding: 4em 4em 4em 2em;
+}
+
+
+.submissionTab {
+    height: auto;
+    width: 100%;
+    padding: 1em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+}

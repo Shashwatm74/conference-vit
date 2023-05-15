@@ -34,28 +34,31 @@
     }
 }
 
-@media (min-width: 600px) {
-    .infoBox {
-        grid-column: 1/ span 8;
-        grid-row: 4/ span 42;
-        border-radius: 30px;
-
-    }
+.announcementsCard {
+    grid-row: 3 / span 81;
+    grid-column: 1 / span 12;
+    position: relative;
+    background-color: $primary-color;
+    border-radius: 8px;
+    padding: 4em 4em 4em 2em;
 }
 
-@media (max-width: 600px) {
-    .infoBox {
-        grid-column: 1/ span 4;
-        grid-row: 4/ span 42;
-        border-radius: 30px;
-    }
+
+.addAnnouncementsButton {
+    border-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 3em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
-@media (min-width: 992px) {
-    .infoBox {
-        @include dashboard_cards;
-        grid-column: 1/ span 12;
-        grid-row: 4/ span 42;
-        border-radius: 30px;
-    }
+.announcementTab {
+    height: auto;
+    width: 100%;
+    padding: 1em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
 }
