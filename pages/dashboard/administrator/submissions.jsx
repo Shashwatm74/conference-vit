@@ -7,7 +7,11 @@ export default function Submissions() {
         <>
             <section section data-scroll-section className={styles.submissions} id="submissions">
                 <div className={styles.sectionWrapper}>
-
+                    <div className={styles.submissionsCard}>
+                        <div className={styles.submissionTab}>
+                            this is a sample Submission and more submissions will appear here .
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

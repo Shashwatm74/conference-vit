@@ -64,7 +64,7 @@
 
 @mixin mix_input_box {
     padding: 0.3em;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 0;
     width: 80%;
     font-family: $text-font;
@@ -82,7 +82,7 @@
 @mixin mix_green_button {
     height: 2.7em;
     width: 7em;
-    border-radius: 5px;
+    border-radius: 8px;
     border-style: none;
     border-color: $secondary-color;
     background-color: $secondary-color;
@@ -113,14 +113,14 @@
 
 @mixin mix_input_box {
     padding: 0.3em;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 0;
     width: 250px;
     font-family: $text-font;
 }
 
 @mixin dashboard_cards {
-    border-radius: 5px;
+    border-radius: 8px;
     position: relative;
     background-color: $primary-color;
 }

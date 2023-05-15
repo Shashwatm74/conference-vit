@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }) {
   else {
     dashBoard = false;
   }
-
   if (dashBoard) {
     return (
       <>
