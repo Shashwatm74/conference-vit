@@ -6,7 +6,7 @@ export default function Announcements() {
         <>
             <section section data-scroll-section className={styles.announcements} id="announcements">
                 <div className={styles.sectionWrapper}>
-
+                   <div className={styles.infoBox}>Announcement</div>
                 </div>
             </section>
         </>

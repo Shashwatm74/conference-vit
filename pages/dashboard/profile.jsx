@@ -7,11 +7,11 @@ import styles from "@/styles/components/dashboard/Profile.module.scss";
 export default function Dashboard(){
    return(
        <>
-       
         <section section data-scroll-section className={styles.profile} id="profile">
             <div className={styles.sectionWrapper}>
                 
-             </div>
+                aehq6j25j357j
+            </div>
         </section>      
        </>
    )
