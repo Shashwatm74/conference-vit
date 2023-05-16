@@ -35,7 +35,7 @@
     text-decoration: none;
     font-family: $text-font;
     font-weight: 600;
-    color: black;
+    color: $tertiary-color;
     user-select: none;
 }
 
@@ -48,10 +48,10 @@
     margin-left: 5.5em;
     margin-top: 7em;
     padding-top: 1em;
-    background-color: black;
+    background-color: $tertiary-color;
     border-radius: 10px;
     place-self: center;
-    color: white;
+    color: $primary-color;
     font-family: $text-font;
 }
 
@@ -96,7 +96,7 @@
     font-family: $text-font;
     font-weight: 600;
     user-select: none;
-    color: $secondary-color;
+    color: $tertiary-color;
 }
 
 @mixin side-bar {
@@ -109,6 +109,16 @@
     inset: 2.69em 0 0 30%;
     background-color: $primary-color;
     opacity: 0.98;
+}
+
+@mixin profile-menu {
+    z-index: 999;
+    border-radius: 8px;
+    flex-direction: column;
+    box-shadow: 0px 0px 12px 0px $tertiary-color;
+    background-color: $primary-color;
+    height: auto;
+    width: 200px;
 }
 
 @mixin mix_input_box {

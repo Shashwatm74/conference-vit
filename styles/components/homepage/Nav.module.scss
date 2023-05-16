@@ -6,16 +6,83 @@
     display: flex;
     width: 100%;
     height: 3.6em;
-    justify-content: space-between;
+    justify-content: right;
     opacity: 0.98;
-    background: #ffffff;
+    background: $primary-color;
     z-index: 1000;
 }
 
-.logo {
-    margin-top: 5px;
-    margin-left: 20px;
-    font-family: 'Source Code Pro', monospace;
+.secondaryNavContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+
+}
+
+.logoLink {
+    margin-top: 4px;
+    height: 50px;
+    width: 128px;
+}
+
+.logoImage {
+    height: 100%;
+    width: 100%;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+///menu css//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+.menu {
+    padding: 0;
+    margin-left: -10px;
+    margin-top: -4px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.menuImage {
+    width: auto;
+    height: 100%;
+    margin-left: -1px;
+}
+
+.navToggle2 {
+    position: absolute;
+    height: 2.4em;
+    width: 2.4em;
+    z-index: 9999;
+    top: 0.9rem;
+    right: 5rem;
+    background: transparent;
+    border: hidden;
+    cursor: pointer;
+    display: block;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+///pfp css //////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+.profilePic {
+    padding: 0;
+    margin-left: -7px;
+    margin-top: -4px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 1px gray;
+}
+
+.pfp {
+    width: auto;
+    height: 100%;
+    margin-left: -1px;
 }
 
 
@@ -29,64 +96,13 @@
     background: transparent;
     border: hidden;
     cursor: pointer;
-    display: none;
-}
-
-@media (max-width: 1000px) {
-    .navToggle {
-        display: block;
-    }
-
-    .nav>ul {
-        @include side-bar;
-        transform: translate(100%);
-        transition: 0.3s ease-in-out;
-
-    }
-
-    .nav[data-visible="true"]>ul {
-        @include side-bar;
-        transform: translate(0%);
-        box-shadow: -5px 13px 12px 0px $tertiary-color;
-    }
-
-}
-
-.navToggle[data-visible='true']>.cross {
-    display: block;
-    height: 2em;
-    width: 2em;
-
-}
-
-.navToggle[data-visible='false']>.hamburger {
     display: block;
 }
 
-.navToggle[data-visible='false']>.cross {
-    display: none;
-}
-
-.navToggle[data-visible='true']>.hamburger {
-    display: none;
-}
-
-.searchbar {
-    @include mix_input_box;
-    visibility: hidden;
-}
-
-.nav {
-    padding-right: min(8%, 4rem);
-}
-
-.nav>ul {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    inset: 2.69em 0 0 30%;
-    gap: 2em;
-}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// nav 1//////////////////////////////////////////////////////////////////////////////////////////////////////
+/// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .nav>ul>li {
     list-style: none;
@@ -98,15 +114,70 @@
 
 }
 
+.nav>ul {
+    // @include side-bar;
+    @include profile-menu;
+    visibility: hidden;
+}
+
+.nav[data-visible="true"]>ul {
+    // @include side-bar;
+    @include profile-menu;
+    visibility: visible;
+    margin-top: 4em;
+}
+
+
+
+.nav {
+    padding-right: min(5%, 1rem);
+    align-self: right;
+}
+
+.nav>ul {
+    display: flex;
+    justify-content: start;
+    align-items: right;
+    padding: 1em;
+    padding-left: 2em;
+    gap: 1em;
+    top: 0;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// nav 2//////////////////////////////////////////////////////////////////////////////////////////////////////
+/// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.nav2>ul>li>a {
+    @include nav-font;
+}
+
+.nav2 {
+    width: auto;
+}
+
+.nav2>ul>li {
+    list-style: none;
+}
+
+.nav2>ul {
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+    gap: 2em;
+}
+
 //navigation bar hover effect 
-.nav>ul>li>a:link,
+.nav2>ul>li>a:link,
 .nav>ul>li>a:visited {
     color: $tertiary-color;
     text-decoration: none;
     position: relative;
 }
 
-.nav>ul>li>a::after {
+.nav2>ul>li>a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -118,7 +189,7 @@
     transition: 0.2s all ease-out;
 }
 
-.nav>ul>li>a:hover::after {
+.nav2>ul>li>a:hover::after {
     transform: scale(1);
 
 }
