@@ -99,6 +99,7 @@
     display: block;
 }
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// nav 1//////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -115,13 +116,11 @@
 }
 
 .nav>ul {
-    // @include side-bar;
     @include profile-menu;
     visibility: hidden;
 }
 
 .nav[data-visible="true"]>ul {
-    // @include side-bar;
     @include profile-menu;
     visibility: visible;
     margin-top: 4em;
@@ -134,15 +133,6 @@
     align-self: right;
 }
 
-.nav>ul {
-    display: flex;
-    justify-content: start;
-    align-items: right;
-    padding: 1em;
-    padding-left: 2em;
-    gap: 1em;
-    top: 0;
-}
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -150,46 +140,93 @@
 /// nav 2//////////////////////////////////////////////////////////////////////////////////////////////////////
 /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.nav2>ul>li>a {
-    @include nav-font;
+
+@media (min-width:1000px) {
+
+    .nav2>ul>li>a {
+        @include nav-font;
+    }
+
+    .nav2 {
+        width: auto;
+    }
+
+    .nav2>ul>li {
+        list-style: none;
+    }
+
+    .nav2>ul {
+
+        display: flex;
+        justify-content: start;
+        padding-left: 2em;
+        gap: 2em;
+    }
+
 }
 
-.nav2 {
-    width: auto;
+///////for smaller screens
+@media (max-width:999px) {
+    .nav2>ul>li>a {
+        @include nav-font;
+    }
+
+    .nav2 {
+        width: auto;
+        @include secondary-menu;
+        visibility: hidden;
+    }
+
+    .nav2>ul>li {
+        list-style: none;
+    }
+
+    .nav2>ul {
+        @include secondary-menu;
+        visibility: hidden;
+    }
+
+    .nav2[data-visible="true"]>ul {
+        @include secondary-menu;
+        visibility: visible;
+        margin-top: 3em;
+        margin-left: 13em;
+        gap: 2em;
+    }
+
+    .nav2 {
+        align-self: right;
+    }
+
 }
 
-.nav2>ul>li {
-    list-style: none;
-}
 
-.nav2>ul {
-    display: flex;
-    justify-content: start;
-    padding-left: 2em;
-    gap: 2em;
-}
+
 
 //navigation bar hover effect 
-.nav2>ul>li>a:link,
-.nav>ul>li>a:visited {
-    color: $tertiary-color;
-    text-decoration: none;
-    position: relative;
-}
+@media (min-width:1000px) {
 
-.nav2>ul>li>a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $tertiary-color;
-    bottom: -4px;
-    left: 0;
-    transform: scale(0);
-    transition: 0.2s all ease-out;
-}
+    .nav2>ul>li>a:link,
+    .nav>ul>li>a:visited {
+        color: $tertiary-color;
+        text-decoration: none;
+        position: relative;
+    }
 
-.nav2>ul>li>a:hover::after {
-    transform: scale(1);
+    .nav2>ul>li>a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $tertiary-color;
+        bottom: -4px;
+        left: 0;
+        transform: scale(0);
+        transition: 0.2s all ease-out;
+    }
 
+    .nav2>ul>li>a:hover::after {
+        transform: scale(1);
+
+    }
 }

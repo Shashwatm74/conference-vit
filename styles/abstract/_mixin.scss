@@ -99,26 +99,38 @@
     color: $tertiary-color;
 }
 
-@mixin side-bar {
-    position: fixed;
+@mixin secondary-menu {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: right;
     z-index: 999;
-    height: 100%;
-    inset: 2.69em 0 0 30%;
+    height: auto;
+    width: 200px;
+    gap: 1em;
+    top: 0;
+    border-radius: 8px;
+    padding: 1em;
+    padding-left: 2em;
+    box-shadow: 0px 0px 12px 0px $tertiary-color;
     background-color: $primary-color;
-    opacity: 0.98;
 }
 
 @mixin profile-menu {
-    z-index: 999;
-    border-radius: 8px;
+    display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 12px 0px $tertiary-color;
-    background-color: $primary-color;
+    justify-content: start;
+    align-items: right;
+    z-index: 999;
     height: auto;
     width: 200px;
+    gap: 1em;
+    top: 0;
+    border-radius: 8px;
+    padding: 1em;
+    padding-left: 2em;
+    box-shadow: 0px 0px 12px 0px $tertiary-color;
+    background-color: $primary-color;
 }
 
 @mixin mix_input_box {

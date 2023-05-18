@@ -21,7 +21,9 @@ const Nav = () => {
                     <Link className={styles.logoLink} href="/" replace >
                         <Image alt="logo" className={styles.logoImage} />
                     </Link>
-                    <nav className={styles.nav2} id='SecondaryNav' data-visible="false">
+
+
+                    <nav className={styles.nav2} id='SecondaryNav' data-visible="true">
                         <ul >
                             <li>
                                 <a href="/#about" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
