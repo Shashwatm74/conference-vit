@@ -1,136 +1,130 @@
-@import '@/styles/abstract/mixin';
-@import '@/styles/abstract/variable';
+@import "@/styles/abstract/mixin";
+@import "@/styles/abstract/variable";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
 @mixin image-size {
-    height: 25vh;
-    width: 25vh;
-    place-self: center;
+  height: 25vh;
+  width: 25vh;
+  place-self: center;
 }
 .schedule {
-    @include section;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 15% 85%;
-    justify-items: center;
-    column-gap: 1em;
+  @include section;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15% 85%;
+  justify-items: center;
+  column-gap: 1em;
 }
 
-.image1{
-    @include image-size();
-    grid-column: 4;
-    object-fit: cover;
-    grid-row: 1;
-    margin-right: 92%;
-    transform: rotate(-15deg);
+.image1 {
+  @include image-size();
+  grid-column: 4;
+  object-fit: cover;
+  grid-row: 1;
+  margin-right: 92%;
+  transform: rotate(-15deg);
 }
-.image2{
-    @include image-size();
-    grid-column: 2;
-    object-fit: cover;
-    grid-row: 3;
-    margin-right: 92%;
-    transform: rotate(-15deg);
+.image2 {
+  @include image-size();
+  grid-column: 2;
+  object-fit: cover;
+  grid-row: 3;
+  margin-right: 92%;
+  transform: rotate(-15deg);
 }
 .cards_right {
-    grid-column: 3;
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: 30%;
-    padding-right: 2em;
+  grid-column: 3;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 30%;
+  padding-right: 2em;
 }
 
 .cards_left {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: 45%;
-    padding-left: 2em;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 45%;
+  padding-left: 2em;
 }
 
 .heading {
-    place-items: center;
-    text-align: center;
-    grid-column: 2/ span 2;
+  place-items: center;
+  text-align: center;
+  grid-column: 2 / span 2;
 }
 
 .card1 {
-    max-width: 100%;
-    min-width: 16em;
-    height: 15em;
-    border-radius: 5%;
-    background-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-family: "Golos Text", sans-serif;
+  max-width: 100%;
+  min-width: 16em;
+  height: 15em;
+  border-radius: 5%;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Golos Text", sans-serif;
 }
 
-.card1>p {
-    text-align: left;
-    padding: 3em 1em 0em 1em;
-    color: aliceblue;
-    font-family: "Golos Text", sans-serif;
-    font-weight: 1000;
+.card1 > p {
+  text-align: left;
+  padding: 3em 1em 0em 1em;
+  color: aliceblue;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 1000;
 }
 
 .card2 {
-    height: 15em;
-    min-width: 16em;
-    max-width: 100%;
-    margin-top: 5em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #b8ff65;
-    border-radius: 5%;
-
+  height: 15em;
+  min-width: 16em;
+  max-width: 100%;
+  margin-top: 5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #b8ff65;
+  border-radius: 5%;
 }
 
-.card2>p {
-    color: black;
-    font-family: "Golos Text", sans-serif;
-    text-align: left;
-    padding: 3em 1em 0em 1em;
-    font-weight: 1200;
-    font-weight: bold;
+.card2 > p {
+  color: black;
+  font-family: "Golos Text", sans-serif;
+  text-align: left;
+  padding: 3em 1em 0em 1em;
+  font-weight: 1200;
+  font-weight: bold;
 }
 
 .card3 {
-    height: 15em;
-    min-width: 16em;
-    max-width: 100%;
-    /* width: minmax(20em, auto); */
-    background-color: rgb(196, 196, 196);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5%;
-    grid-row: 2;
-
+  height: 15em;
+  min-width: 16em;
+  max-width: 100%;
+  /* width: minmax(20em, auto); */
+  background-color: rgb(196, 196, 196);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  grid-row: 2;
 }
 
-.card3>p {
-    color: black;
-    font-family: "Golos Text", sans-serif;
-    text-align: left;
-    padding: 3em 1em 0em 1em;
-    font-weight: bold;
+.card3 > p {
+  color: black;
+  font-family: "Golos Text", sans-serif;
+  text-align: left;
+  padding: 3em 1em 0em 1em;
+  font-weight: bold;
 }
-
-
 
 .ln_un_hz {
-    min-width: 7.5em;
-    max-width: 100%;
-    color: #000000;
-    font-family: "Golos Text", sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 6.5em;
-    border-top: 3px solid rgb(196, 196, 196);
-
-
+  min-width: 7.5em;
+  max-width: 100%;
+  color: #000000;
+  font-family: "Golos Text", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 6.5em;
+  border-top: 3px solid rgb(196, 196, 196);
 }
 
 .heading span {
-    background-color: #b8ff65;
+  background-color: #b8ff65;
 }
 
 .ln-un-hz span {
-    background-color: #b8ff65;
+  background-color: #b8ff65;
 }
