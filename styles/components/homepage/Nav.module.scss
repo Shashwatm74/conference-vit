@@ -30,6 +30,15 @@
     width: 100%;
 }
 
+.listElement {
+    @include nav-font;
+    list-style: none;
+}
+
+.a {
+    text-decoration: none;
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 ///menu css//////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -105,15 +114,6 @@
 /// nav 1//////////////////////////////////////////////////////////////////////////////////////////////////////
 /// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.nav>ul>li {
-    list-style: none;
-
-}
-
-.nav>ul>li>a {
-    @include nav-font;
-
-}
 
 .nav>ul {
     @include profile-menu;
@@ -143,16 +143,8 @@
 
 @media (min-width:1000px) {
 
-    .nav2>ul>li>a {
-        @include nav-font;
-    }
-
     .nav2 {
         width: auto;
-    }
-
-    .nav2>ul>li {
-        list-style: none;
     }
 
     .nav2>ul {
@@ -165,11 +157,16 @@
 
 }
 
+.navToggle2 {
+    visibility: hidden;
+}
+
 ///////for smaller screens
 @media (max-width:999px) {
-    .nav2>ul>li>a {
-        @include nav-font;
+    .navToggle2 {
+        visibility: visible;
     }
+
 
     .nav2 {
         width: auto;
@@ -177,9 +174,6 @@
         visibility: hidden;
     }
 
-    .nav2>ul>li {
-        list-style: none;
-    }
 
     .nav2>ul {
         @include secondary-menu;
@@ -206,14 +200,14 @@
 //navigation bar hover effect 
 @media (min-width:1000px) {
 
-    .nav2>ul>li>a:link,
-    .nav>ul>li>a:visited {
+    .nav2>ul>a:link,
+    .nav2>ul>a:visited {
         color: $tertiary-color;
         text-decoration: none;
         position: relative;
     }
 
-    .nav2>ul>li>a::after {
+    .nav2>ul>a::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -225,7 +219,7 @@
         transition: 0.2s all ease-out;
     }
 
-    .nav2>ul>li>a:hover::after {
+    .nav2>ul>a:hover::after {
         transform: scale(1);
 
     }

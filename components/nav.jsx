@@ -23,33 +23,33 @@ const Nav = () => {
                     </Link>
 
 
-                    <nav className={styles.nav2} id='SecondaryNav' data-visible="true">
+                    <nav className={styles.nav2} id='SecondaryNav' data-visible="false">
                         <ul >
-                            <li>
-                                <a href="/#about" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
+                            <a className={styles.a} href="/#about" replace onClick={() => { document.getElementById("SecondaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle2").setAttribute("data-visible", "false"); }} >
+                                <li className={styles.listElement}>
                                     About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/#speakers" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
+                                </li>
+                            </a>
+                            <a className={styles.a} href="/#speakers" replace onClick={() => { document.getElementById("SecondaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle2").setAttribute("data-visible", "false"); }} >
+                                <li className={styles.listElement}>
                                     Speakers
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/#schedule" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
+                                </li>
+                            </a>
+                            <a className={styles.a} href="/#schedule" replace onClick={() => { document.getElementById("SecondaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle2").setAttribute("data-visible", "false"); }} >
+                                <li className={styles.listElement}>
                                     Schedule
-                                </a>
-                            </li>
-                            <li>
-                                <Link href="/home/registrations" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
+                                </li>
+                            </a>
+                            <Link className={styles.a} href="/home/registrations" replace onClick={() => { document.getElementById("SecondaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle2").setAttribute("data-visible", "false"); }} >
+                                <li className={styles.listElement}>
                                     Registration
-                                </Link>
-                            </li>
-                            <li>
-                                <a href="/#contact" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }} >
+                                </li>
+                            </Link>
+                            <a className={styles.a} href="/#contact" replace onClick={() => { document.getElementById("SecondaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle2").setAttribute("data-visible", "false"); }} >
+                                <li className={styles.listElement}>
                                     Contact
-                                </a>
-                            </li>
+                                </li>
+                            </a>
                         </ul>
 
                     </nav>
@@ -57,28 +57,28 @@ const Nav = () => {
 
                 <nav className={styles.nav} id='PrimaryNav' data-visible="false">
                     <ul>
-                        <li>
-                            <Link href="/login" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }}>
+                        <Link className={styles.a} href="/login" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }}>
+                            <li className={styles.listElement}>
                                 Login
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/dashboard/administrator" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }}>
+                            </li>
+                        </Link>
+                        <Link className={styles.a} href="/dashboard/administrator" replace onClick={() => { document.getElementById("PrimaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle").setAttribute("data-visible", "false"); }}>
+                            <li className={styles.listElement}>
                                 Dash
-                            </Link>
-                        </li>
+                            </li>
+                        </Link>
 
                     </ul>
                 </nav>
                 <button className={styles.navToggle2} id='NavToggle2' data-visible="false">
                     <div className={styles.menu}>
-                        <Image alt="menu" className={styles.menuImage} src={menuImage} />
+                        <Image id='menu' alt="menu" className={styles.menuImage} src={menuImage} />
                     </div>
                 </button>
 
                 <button className={styles.navToggle} id='NavToggle' data-visible="false">
                     <div className={styles.profilePic}>
-                        <Image alt="profile picture" className={styles.pfp} src={pfp} />
+                        <Image id='pfp' alt="profile picture" className={styles.pfp} src={pfp} />
                     </div>
                 </button>
 
