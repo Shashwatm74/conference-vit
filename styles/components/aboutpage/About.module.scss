@@ -240,3 +240,34 @@
     grid-row: 15;
   }
 }
+@media (max-width: 500px) {
+  .cards_left > .card1 {
+    width: 7em;
+    height: 7em;
+  }
+  .cards_left > .card1 > p {
+    font-size: 0.6em;
+  }
+  .cards_left > .card3 {
+    grid-row: 18;
+    width: 7em;
+    height: 7em;
+  }
+  .cards_left > .card3 > p {
+    font-size: 0.6em;
+  }
+  .cards_right > .card2 {
+    width: 7em;
+    height: 7em;
+  }
+  .cards_right > .card2 > p {
+    font-size: 0.6em;
+  }
+  .cards_right > .ln_un_hz {
+    min-width: 3em;
+    grid-row: 7;
+  }
+  .cards_right > .ln_un_hz > p {
+    font-size: 0.4em;
+  }
+}

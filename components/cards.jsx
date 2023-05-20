@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import styles from '@/styles/components/speakerpage/Cards.module.scss';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from 'gsap';
-import useOnScreen from '@/hook/useOnScreen';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,8 +16,6 @@ function Cards(
 ) {
 
     const cardRef = useRef(null);
-
-    const onScreen = useOnScreen(cardRef);
 
 
     useEffect(() => {
@@ -58,7 +55,7 @@ function Cards(
                     <div className={styles.container}>
                         <div className={styles.namecontainer} >{name}</div>
                         <div className={styles.detailcontainer}>
-                            <div>{details}</div> 
+                            <div>{details}</div>
                             <div className={styles.button}>^</div>
                         </div>
                     </div>

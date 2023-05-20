@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "@/styles/components/speakerpage/Speakers.module.scss";
 import Cards from "@/components/cards";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap";
+import { useDraggable } from "react-use-draggable-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const speakers = [
+const Courses = [
   {
     id: 1,
     name: "Speaker 1",
@@ -55,9 +56,12 @@ const speakers = [
   },
 ];
 
-function Speakers() {
+function Course() {
   const headingRef = useRef(null);
   const cardRef = useRef(null);
+  const CardwrapperRef = useRef(); // We will use React useRef hook to reference the wrapping div:
+  const { events } = useDraggable(CardwrapperRef);
+
   useEffect(() => {
     gsap.fromTo(
       headingRef.current,
@@ -79,27 +83,33 @@ function Speakers() {
       }
     );
   }, []);
-
   return (
     <>
-      <section data-scroll-section className={styles.speakers} id="speakers">
-        <div ref={headingRef} className={styles.heading}>
-          <h1>
-            "Voices That <span className={styles.span}>Inspire:</span>
-            <br /> Meet the Speakers Who Will Ignite Your Passion
-            <br /> and Spark Your Imagination"
-          </h1>
-        </div>
-        <div className={styles.card_gallery_wrap}>
-          <div className={styles.card_carousel}>
-            {speakers.map((speakers) => (
-              <Cards cardRef={cardRef} key={speakers.id} {...speakers} />
-            ))}
+      <section className={styles.speakers} id="speakers">
+        <div className={styles.sectionWrapper}>
+          <div className={styles.headingSpeakers}>
+            <h1>
+              "Voices That <span className={styles.span}>Inspire:</span>
+              <br /> Meet the Speakers Who Will Ignite Your Passion
+              <br /> and Spark Your Imagination"
+            </h1>
           </div>
+          <div className={styles.card_gallery_wrap}>
+            <div
+              ref={CardwrapperRef}
+              className={styles.card_carousel}
+              {...events}
+            >
+              {Courses.map((Courses) => (
+                <Cards cardRef={cardRef} key={Courses.id} {...Courses} />
+              ))}
+            </div>
+          </div>
+          <button className={styles.course_btn}>All Courses &gt;</button>
         </div>
       </section>
     </>
   );
 }
 
-export default Speakers;
+export default Course;

@@ -22,7 +22,6 @@
   font-size: 60%;
   line-height: 1.7em;
   font-family: "Golos Text", sans-serif;
-  color: $primary-color;
 }
 
 .aboutPara2 {
@@ -30,6 +29,7 @@
   font-size: 60%;
   line-height: 1.7em;
   font-family: "Golos Text", sans-serif;
+  background-color: $tertiary-color;
 }
 
 @media (max-width: 600px) {
@@ -48,7 +48,7 @@
   .aboutPara2 {
     grid-column: 1 / span 4;
     grid-row: 61 / span 22;
-    background-color: #c2d0e2;
+    background-color: $tertiary-color;
     border-radius: 10px;
     padding: 8%;
     font-size: 60%;
