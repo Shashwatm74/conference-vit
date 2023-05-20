@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-// import styles from "@/styles/components/countDownTimer/countDownTimer.module.scss";
+import dynamic from 'next/dynamic';
+import styles from "@/styles/components/countDownTimer/countDownTimer.module.scss";
+
+
 
 const CountdownTimer = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -18,10 +21,10 @@ const CountdownTimer = ({ targetDate }) => {
 
         if (difference > 0) {
             timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60),
+                DAYS: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                HOURS: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                MINUTES: Math.floor((difference / 1000 / 60) % 60),
+                SECONDS: Math.floor((difference / 1000) % 60),
             };
         }
 
@@ -30,25 +33,43 @@ const CountdownTimer = ({ targetDate }) => {
 
     const timerComponents = [];
 
-    Object.keys(timeLeft).forEach((interval) => {
-        if (!timeLeft[interval]) {
-            return;
-        }
 
-        timerComponents.push(
-            <div className="timer">
-                <span key={interval}>
-                    {timeLeft[interval]} {':'} {interval}
-                </span>
+    Object.keys(timeLeft).forEach((interval) => {
+
+        if (!(interval == "SECONDS")) {
+            <div className={styles.timer}>
+                {
+                    timerComponents.push(
+
+                        <div className={styles.innerContainer} key={interval}>
+                            <span className={styles.timerNum}>{timeLeft[interval]} </span> {" "}
+                            <span className={styles.timerText}>{interval}</span>
+                            <span className={styles.timerColon}>{':'}</span>
+                        </div>
+                    )
+                }
             </div>
-        );
+        }
+        else {
+            <div className={styles.timer}>
+                {
+                    timerComponents.push(
+
+                        <div className={styles.innerContainer} key={interval}>
+                            <span className={styles.timerNum}>{timeLeft[interval]} </span> {" "}<span className={styles.timerText}>{interval}</span>
+                        </div>
+                    )
+                }
+            </div>
+        }
     });
 
     return (
-        <div>
-            {timerComponents.length ? timerComponents : <span>Time s up!</span>}
+        <div className={styles.timer}>
+            {timerComponents.length ? timerComponents : <span>Click to Join the Meet !</span>}
         </div>
     );
-};
 
-export default CountdownTimer;
+
+}
+export default dynamic(() => Promise.resolve(CountdownTimer), { ssr: false });

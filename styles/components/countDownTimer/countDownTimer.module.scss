@@ -1,3 +1,51 @@
 @import "@/styles/abstract/mixin";
 @import "@/styles/abstract/variable";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+
+.timer {
+    margin-top: 5em;
+    background-color: $dashboard-timer-color;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.innerContainer {
+    height: 30px;
+    margin-top: 20px;
+    color: $primary-color;
+    gap: 2px;
+    font-size: 0.6em;
+}
+
+.timerNum,
+.timerColon {
+    font-size: 2.5em;
+}
+
+.timerText {
+    margin-top: 0.5em;
+}
+
+@media (max-width:650px) {
+    .timer {
+        height: 70px;
+        margin-top: 4.5em;
+    }
+
+    .innerContainer {
+        height: 30px;
+        margin-top: 20px;
+        color: $primary-color;
+        gap: 2px;
+        font-size: 0.4em;
+    }
+
+    .timerNum,
+    .timerColon {
+        font-size: 1.5em;
+    }
+}

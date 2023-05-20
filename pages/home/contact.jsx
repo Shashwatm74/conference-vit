@@ -13,14 +13,14 @@ function Contact() {
                     <div className={styles.touchytext}>
                         <h1>Get in Touch</h1>
                         <div className={styles.connectionlinks} >
-                            
+
                             <div className={styles.fa} ><a href="#"  > </a></div>
-                            <div className={styles.fa} ><a href= "#" ></a></div>
-                            <div className={styles.fa} ><a href= "#" ></a></div>
+                            <div className={styles.fa} ><a href="#" ></a></div>
+                            <div className={styles.fa} ><a href="#" ></a></div>
                         </div>
                     </div>
                     <div className={styles.connectionimage}>
-                        <img src="" width = "400vw"  height="300vw"/>
+                        <img src="" />
                     </div>
                 </div>
             </section>
