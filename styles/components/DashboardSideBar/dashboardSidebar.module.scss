@@ -17,7 +17,7 @@
     top: 0px;
     border-radius: 8px 0px 0px 8px;
     z-index: 1001;
-    background: #ffffff;
+    background: $primary-color;
 
     @media (max-width:992px) {
         width: 42px;
@@ -38,6 +38,6 @@
 
 
 .active {
-    background: #E6F6FF;
+    background: $dashboard-sidebar-bg-color;
     color: #002159;
 }

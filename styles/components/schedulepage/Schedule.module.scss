@@ -7,6 +7,7 @@
     width: 25vh;
     place-self: center;
 }
+
 .schedule {
     @include section;
     display: grid;
@@ -16,7 +17,7 @@
     column-gap: 1em;
 }
 
-.image1{
+.image1 {
     @include image-size();
     grid-column: 4;
     object-fit: cover;
@@ -24,7 +25,8 @@
     margin-right: 92%;
     transform: rotate(-15deg);
 }
-.image2{
+
+.image2 {
     @include image-size();
     grid-column: 2;
     object-fit: cover;
@@ -32,6 +34,7 @@
     margin-right: 92%;
     transform: rotate(-15deg);
 }
+
 .cards_right {
     grid-column: 3;
     grid-row: 2;
@@ -59,7 +62,7 @@
     min-width: 16em;
     height: 15em;
     border-radius: 5%;
-    background-color: black;
+    background-color: $tertiary-color;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: "Golos Text", sans-serif;
 }
@@ -78,13 +81,13 @@
     max-width: 100%;
     margin-top: 5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #b8ff65;
+    background-color: $secondary-color;
     border-radius: 5%;
 
 }
 
 .card2>p {
-    color: black;
+    color: $tertiary-color;
     font-family: "Golos Text", sans-serif;
     text-align: left;
     padding: 3em 1em 0em 1em;
@@ -105,7 +108,7 @@
 }
 
 .card3>p {
-    color: black;
+    color: $tertiary-color;
     font-family: "Golos Text", sans-serif;
     text-align: left;
     padding: 3em 1em 0em 1em;
@@ -117,7 +120,7 @@
 .ln_un_hz {
     min-width: 7.5em;
     max-width: 100%;
-    color: #000000;
+    color: $tertiary-color;
     font-family: "Golos Text", sans-serif;
     font-size: 2em;
     font-weight: bold;
@@ -128,9 +131,9 @@
 }
 
 .heading span {
-    background-color: #b8ff65;
+    background-color: $secondary-color;
 }
 
 .ln-un-hz span {
-    background-color: #b8ff65;
+    background-color: $tertiary-color;
 }

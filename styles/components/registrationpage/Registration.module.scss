@@ -38,7 +38,7 @@
     height: 27em;
     margin-top: 6em;
     border-radius: 5%;
-    background-color: black;
+    background-color: $tertiary-color;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: "Golos Text", sans-serif;
 }
@@ -57,13 +57,13 @@
     margin-top: 6em;
     height: 27em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #b8ff65;
+    background-color: $secondary-color;
     border-radius: 5%;
 
 }
 
 .card2>p {
-    color: black;
+    color: $tertiary-color;
     font-family: "Golos Text", sans-serif;
     text-align: left;
     padding: 3em 1em 0em 1em;
@@ -72,5 +72,5 @@
 }
 
 .heading span {
-    background-color: #b8ff65;
+    background-color: $secondary-color;
 }

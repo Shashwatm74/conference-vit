@@ -6,7 +6,7 @@
 
 .submissions {
     @include section;
-    background-color: #f1f3f7f4;
+    background-color: $dashboard-bg-color;
 
     @media (min-width: 600px) {
         height: max(700px, 140vh);

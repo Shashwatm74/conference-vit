@@ -5,7 +5,7 @@
 
 .dashboard {
     @include section;
-    background-color: #f1f3f7f4;
+    background-color: $dashboard-bg-color;
 
     @media (min-width: 600px) {
         height: max(700px, 140vh);
@@ -46,6 +46,8 @@
 .meetCard,
 .registrationCard {
     @include dashboard_cards;
+    display: block;
+    display: flex;
 }
 
 @media (min-width: 600px) {
@@ -107,6 +109,10 @@
     }
 }
 
+////////////////////////////////////////////////////////////////////////
+/// profile card specific css //////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+
 .editButton {
     height: 30px;
     width: 30px;
@@ -117,4 +123,37 @@
     border-radius: 8px;
     border-style: none;
     background-color: #f0efef;
+}
+
+////////////////////////////////////////////////////////////////////////
+/// meet card specific css //////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+.meetWindow {
+    height: 80%;
+    width: 60%;
+    margin: 1.7em;
+    border-radius: 8px;
+    background-color: $dashboard-sidebar-bg-color;
+}
+
+.meetJoin {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.meetJoin>p {
+    height: 50%;
+    width: auto;
+    padding: 1.5em;
+    padding-top: 3.5em;
+    text-align: center;
+}
+
+.joinButton {
+    justify-self: center;
+    align-self: center;
+    height: auto;
+    margin-bottom: 3.5em;
 }

@@ -25,7 +25,7 @@
 }
 
 .heading span {
-    background-color: #b8ff65;
+    background-color: $secondary-color;
 }
 
 
@@ -38,7 +38,7 @@
 }
 
 .ccard_carousel::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
+    background-color: $tertiary-color;
     border-radius: 10px;
 
 }
