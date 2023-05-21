@@ -1,41 +1,77 @@
-@import '@/styles/abstract/mixin';
-@import '@/styles/abstract/variable';
+@import "@/styles/abstract/mixin";
+@import "@/styles/abstract/variable";
 
 .login {
-    @include section;
-    display: grid;
-    grid-template-columns: repeat(3, 33.33333%);
-    grid-template-rows: 100%;
+  @include section;
 }
 
 .login_container {
-    grid-column: 2;
-    grid-row: 1;
+  @include sectionWrapper;
 }
 
 .login_card_wrapper {
-    @include login_signup_card_wrapper;
-    grid-template-rows: 15% 10% 10% 10% 10%;
-
+  @include login_signup_card_wrapper;
+  grid-column: 4/9;
+  grid-row: 50;
 }
 
 .span_heading {
-    @include mix_span_heading;
+  @include mix_span_heading;
 }
 
 .input_box {
-    @include mix_input_box;
+  @include mix_input_box;
 }
 
 .signup_text {
-    @include mix_login_signup_text;
+  @include mix_login_signup_text;
 }
 
-.signup_link>a {
-    @include mix_login_signup_link;
-
+.signup_link > a {
+  @include mix_login_signup_link;
 }
 
 .green_button {
-    @include mix_green_button;
+  @include mix_green_button;
+}
+@media (max-width: 992px) {
+  .login_card_wrapper {
+    grid-column: 3/6;
+    grid-row: 30;
+  }
+}
+@media (max-width: 602px) {
+  .login_card_wrapper {
+    grid-column: 1/4;
+    grid-row: 30;
+  }
+}
+@media (max-width: 464px) {
+  .login_container {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+  }
+  .login_card_wrapper {
+    width: max(250px);
+    height: max(400px, 63%);
+    grid-column: 1/5;
+    font-size: 0.8em;
+  }
+  .input_box {
+    width: 60%;
+    font-size: 1em;
+  }
+}
+@media (max-width: 434px) {
+  .login_card_wrapper {
+    width: max(230px);
+    height: max(350px, 63%);
+    grid-column: 1/5;
+    font-size: 0.6em;
+  }
+  .green_button {
+    height: 2.4em;
+    width: 6em;
+    font-size: 0.8em;
+  }
 }

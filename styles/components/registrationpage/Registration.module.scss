@@ -2,13 +2,13 @@
 @import "@/styles/abstract/variable";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
-.about {
+.registration {
   @include section;
   background-color: $fourth-color;
   z-index: 1;
 }
 
-.aboutTitle {
+.registrationTitle {
   @include sectionTitle;
 }
 
@@ -22,6 +22,8 @@
   font-size: 60%;
   line-height: 1.7em;
   font-family: "Golos Text", sans-serif;
+  background-color: $secondary-color;
+  color: $tertiary-color;
 }
 
 .aboutPara2 {
@@ -30,25 +32,25 @@
   line-height: 1.7em;
   font-family: "Golos Text", sans-serif;
   background-color: $tertiary-color;
+  color: $fourth-color;
 }
 
 @media (max-width: 600px) {
   .aboutPara1 {
     grid-column: 1 / span 4;
     grid-row: 34 / span 22;
-    background-color: $secondary-color;
+
     border-radius: 10px;
     padding: 8%;
     font-size: 60%;
     line-height: 1.7em;
     font-family: "Golos Text", sans-serif;
-    color: $primary-color;
   }
 
   .aboutPara2 {
     grid-column: 1 / span 4;
     grid-row: 61 / span 22;
-    background-color: $tertiary-color;
+
     border-radius: 10px;
     padding: 8%;
     font-size: 60%;
@@ -73,19 +75,18 @@
   .aboutPara1 {
     grid-column: 1 / span 8;
     grid-row: 28 / span 30;
-    background-color: $secondary-color;
+
     border-radius: 10px;
     padding: 8%;
     font-size: 0.85em;
     line-height: 1.7em;
     font-family: "Golos Text", sans-serif;
-    color: $primary-color;
   }
 
   .aboutPara2 {
     grid-column: 1 / span 8;
     grid-row: 57 / span 30;
-    background-color: #c2d0e2;
+
     border-radius: 10px;
     padding: 8%;
     font-size: 0.85em;
@@ -110,7 +111,7 @@
   .aboutPara1 {
     grid-column: 2 / span 4;
     grid-row: 24 / span 60;
-    background-color: $secondary-color;
+
     border-radius: 10px;
     z-index: 1;
     padding: 8%;
@@ -118,13 +119,12 @@
     font-size: 0.9em;
     line-height: 1.7em;
     font-family: "Golos Text", sans-serif;
-    color: $primary-color;
   }
 
   .aboutPara2 {
     grid-column: 8 / span 4;
     grid-row: 24 / span 60;
-    background-color: #c2d0e2;
+
     border-radius: 10px;
     z-index: 1;
     padding: 8%;
@@ -142,7 +142,7 @@
   .aboutPara1 {
     grid-column: 2 / span 4;
     grid-row: 24 / span 60;
-    background-color: $secondary-color;
+
     border-radius: 10px;
     z-index: 1;
     padding: 8%;
@@ -150,13 +150,12 @@
     font-size: 1em;
     line-height: 1.7em;
     font-family: "Golos Text", sans-serif;
-    color: $primary-color;
   }
 
   .aboutPara2 {
     grid-column: 8 / span 4;
     grid-row: 24 / span 60;
-    background-color: #c2d0e2;
+
     border-radius: 10px;
     z-index: 1;
     padding: 8%;

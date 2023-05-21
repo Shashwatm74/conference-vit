@@ -6,7 +6,6 @@ import Homepage from "./home";
 import About from "./home/about";
 import Speakers from "./home/speakers";
 import Schedule from "./home/schedule";
-// import Registration from "./home/registrations";
 import Contact from "./home/contact";
 import Script from "next/script";
 
@@ -53,7 +52,6 @@ export default function Home() {
       <About />
       <Speakers />
       <Schedule />
-      {/* <Registration /> */}
       <Contact />
     </>
   );

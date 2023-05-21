@@ -1,41 +1,88 @@
-@import '@/styles/abstract/mixin';
-@import '@/styles/abstract/variable';
+@import "@/styles/abstract/mixin";
+@import "@/styles/abstract/variable";
 
 .login {
-    @include section;
-    display: grid;
-    grid-template-columns: repeat(3, 33.33333%);
-    grid-template-rows: 100%;
+  @include section;
 }
 
 .login_container {
-    grid-column: 2;
-    grid-row: 1;
+  @include sectionWrapper;
 }
 
 .signup_card_wrapper {
-    @include login_signup_card_wrapper;
-    grid-template-rows: 9% 4% 9% 9% 4% 9% 4% 9% 4% 9%;
-
+  grid-column: 5/8;
+  grid-row: 50;
+  display: grid;
+  place-items: center;
+  width: max(400px, 65%);
+  height: max(600px, 63%);
+  margin-left: 5.5em;
+  margin-top: 7em;
+  padding-top: 1em;
+  background-color: $tertiary-color;
+  border-radius: 10px;
+  place-self: center;
+  color: $primary-color;
+  font-family: $text-font;
 }
 
 .span_heading {
-    @include mix_span_heading;
+  @include mix_span_heading;
 }
 
 .input_box {
-    @include mix_input_box;
+  @include mix_input_box;
 }
 
 .signup_text {
-    @include mix_login_signup_text;
+  @include mix_login_signup_text;
 }
 
-.signup_link>a {
-    @include mix_login_signup_link;
-
+.signup_link > a {
+  @include mix_login_signup_link;
 }
 
 .green_button {
-    @include mix_green_button;
+  @include mix_green_button;
+}
+@media (max-width: 992px) {
+  .signup_card_wrapper {
+    grid-column: 3/6;
+    grid-row: 45;
+  }
+}
+@media (max-width: 602px) {
+  .signup_card_wrapper {
+    grid-column: 1/4;
+    grid-row: 45;
+  }
+}
+@media (max-width: 464px) {
+  .login_container {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+  }
+  .signup_card_wrapper {
+    width: max(250px);
+    height: max(400px, 63%);
+    grid-column: 1/5;
+    font-size: 0.8em;
+  }
+  .input_box {
+    width: 60%;
+    font-size: 1em;
+  }
+}
+@media (max-width: 434px) {
+  .signup_card_wrapper {
+    width: max(230px);
+    height: max(350px, 63%);
+    grid-column: 1/5;
+    font-size: 0.6em;
+  }
+  .green_button {
+    height: 2.4em;
+    width: 6em;
+    font-size: 0.8em;
+  }
 }
