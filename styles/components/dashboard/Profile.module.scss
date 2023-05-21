@@ -5,10 +5,151 @@
 .profile {
     @include section;
     z-index: 1;
+    background-color: $dashboard-bg-color;
+
+    @media (min-width: 600px) {
+        height: max(700px, 140vh);
+    }
+
+    @media (max-width: 600px) {
+        height: max(700px, 140vh);
+    }
+
+    @media(min-width: 992px) {
+        margin-left: 370px;
+        height: max(750px, 100vh);
+    }
 
 }
 
 .sectionWrapper {
     @include sectionWrapper;
     height: 95vh;
+    margin-bottom: 32px;
+
+    @media(min-width:300px) {
+        width: 92%;
+        margin-left: 42px;
+        margin-top: 60px;
+    }
 }
+
+.profileCard {
+    grid-row: 3 / span 81;
+    grid-column: 1 / span 12;
+    background-color: $primary-color;
+    border-radius: 8px;
+    padding: 4em 4em 4em 2em;
+    position: relative;
+    font-style: $heading-font;
+}
+
+.headCard{
+    display: grid;
+    border-radius: 8px;
+    margin-top: -7.5%;
+    margin-left: 12%;
+    height: 15%;
+    width: 50%;
+}
+
+.nameHead{
+    border-radius: 8px;
+    font-size: x-large;
+    font: $heading-font;
+}
+
+.emailHead{
+    border-radius: 8px;
+    color: rgb(137, 137, 137);
+    font-size: medium;
+}
+
+.photo {
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    border-radius: 50px;
+    margin-top: 4%;
+    text-align: center;
+    border: solid 1px rgb(193, 193, 193); 
+}
+
+.detailsBox{
+    height: auto;
+    width: 100%;
+    margin-top: 4%;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+}
+
+.boxSet{
+    height: 40px;
+    width: 40%;
+    margin-top: 4%;
+    margin-left: 2em;
+}
+
+.usernameBox{
+    height: 20px;
+    width: 40%;
+    margin-top: 4%;
+    padding-top: 1em;
+    margin-left: 2em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+    
+}
+
+.nameBox{
+    height: 20px;
+    width: 40%;
+    margin-top: 4%;
+    padding-top: 1em;
+    margin-left: 2em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+}
+
+.emailBox{
+    height: 20px;
+    width: 40%;
+    margin-top: -4%;
+    padding-top: 1em;
+    margin-left: 30em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+}
+
+.addressBox{
+    height: 20px;
+    width: 40%;
+    margin-top: 4%;
+    padding-top: 1em;
+    margin-left: 2em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+}
+
+.cityBox{
+    height: 20px;
+    width: 35%;
+    margin-top: -4%;
+    padding-top: 1em;
+    margin-left: 30em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+}
+
+.pinBox{
+    height: 20px;
+    width: 20%;
+    margin-top: 4%;
+    padding-top: 1em;
+    margin-left: 2em;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 8px;
+}
+
