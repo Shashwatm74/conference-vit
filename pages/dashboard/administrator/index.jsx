@@ -4,6 +4,7 @@ import React from "react";
 import styles from "@/styles/components/dashboard/Dashboard.module.scss";
 import { Button } from "@geist-ui/react";
 import CountdownTimer from "@/components/timer/timer";
+import Link from "next/link";
 
 
 
@@ -17,7 +18,7 @@ export default function Dashboard() {
                 <div className={styles.sectionWrapper}>
                     <div className={styles.profile}>
                         profile section
-                        <button className={styles.editButton}>Edit</button>
+                        <Link href='/dashboard/profile'><button className={styles.editButton} >Edit</button></Link>
                     </div>
 
                     <div className={styles.meetCard}>
