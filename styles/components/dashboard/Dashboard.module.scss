@@ -129,11 +129,14 @@
 /// meet card specific css //////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 .meetWindow {
+    display: flex;
     height: 80%;
     width: 60%;
     margin: 1.7em;
     border-radius: 8px;
     background-color: $dashboard-sidebar-bg-color;
+    justify-items: center;
+    text-align: center;
 }
 
 .meetJoin {

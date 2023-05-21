@@ -25,6 +25,11 @@ const Nav = () => {
 
                     <nav className={styles.nav2} id='SecondaryNav' data-visible="false">
                         <ul >
+                            <a className={styles.a} href="/" replace onClick={() => { document.getElementById("SecondaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle2").setAttribute("data-visible", "false"); }} >
+                                <li className={styles.listElement}>
+                                    Home
+                                </li>
+                            </a>
                             <a className={styles.a} href="/#about" replace onClick={() => { document.getElementById("SecondaryNav").setAttribute("data-visible", "false"); document.getElementById("NavToggle2").setAttribute("data-visible", "false"); }} >
                                 <li className={styles.listElement}>
                                     About

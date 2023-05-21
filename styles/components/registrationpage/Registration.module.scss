@@ -1,76 +1,168 @@
-@import '@/styles/abstract/mixin';
-@import '@/styles/abstract/variable';
+@import "@/styles/abstract/mixin";
+@import "@/styles/abstract/variable";
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
-.registration {
-    @include section;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 15% 85%;
-    justify-items: center;
-    column-gap: 2em;
+.about {
+  @include section;
+  background-color: $fourth-color;
+  z-index: 1;
 }
 
-.cards_right {
-    grid-column: 3;
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: 30%;
-    padding-right: 2em;
+.aboutTitle {
+  @include sectionTitle;
 }
 
-.cards_left {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: 45%;
-    padding-left: 2em;
+.sectionWrapper {
+  @include sectionWrapper;
+  z-index: 1;
 }
 
-.heading {
-    place-items: center;
-    text-align: center;
-    grid-column: 2/ span 2;
+.aboutPara1 {
+  padding: 8%;
+  font-size: 60%;
+  line-height: 1.7em;
+  font-family: "Golos Text", sans-serif;
 }
 
-.card1 {
-    max-width: 100%;
-    min-width: 16em;
-    height: 27em;
-    margin-top: 6em;
-    border-radius: 5%;
+.aboutPara2 {
+  padding: 8%;
+  font-size: 60%;
+  line-height: 1.7em;
+  font-family: "Golos Text", sans-serif;
+  background-color: $tertiary-color;
+}
+
+@media (max-width: 600px) {
+  .aboutPara1 {
+    grid-column: 1 / span 4;
+    grid-row: 34 / span 22;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    padding: 8%;
+    font-size: 60%;
+    line-height: 1.7em;
+    font-family: "Golos Text", sans-serif;
+    color: $primary-color;
+  }
+
+  .aboutPara2 {
+    grid-column: 1 / span 4;
+    grid-row: 61 / span 22;
     background-color: $tertiary-color;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 8%;
+    font-size: 60%;
+    line-height: 1.7em;
     font-family: "Golos Text", sans-serif;
+  }
+
+  @media (min-height: 910px) {
+    .aboutPara1 {
+      grid-column: 1 / span 4;
+      grid-row: 34 / span 32;
+    }
+
+    .aboutPara2 {
+      grid-column: 1 / span 4;
+      grid-row: 70 / span 32;
+    }
+  }
 }
 
-.card1>p {
-    text-align: left;
-    padding: 3em 1em 0em 1em;
-    color: aliceblue;
-    font-family: "Golos Text", sans-serif;
-    font-weight: 1000;
-}
-
-.card2 {
-    min-width: 16em;
-    max-width: 100%;
-    margin-top: 6em;
-    height: 27em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+@media (min-width: 600px) {
+  .aboutPara1 {
+    grid-column: 1 / span 8;
+    grid-row: 28 / span 30;
     background-color: $secondary-color;
-    border-radius: 5%;
-
-}
-
-.card2>p {
-    color: $tertiary-color;
+    border-radius: 10px;
+    padding: 8%;
+    font-size: 0.85em;
+    line-height: 1.7em;
     font-family: "Golos Text", sans-serif;
-    text-align: left;
-    padding: 3em 1em 0em 1em;
-    font-weight: 1200;
-    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .aboutPara2 {
+    grid-column: 1 / span 8;
+    grid-row: 57 / span 30;
+    background-color: #c2d0e2;
+    border-radius: 10px;
+    padding: 8%;
+    font-size: 0.85em;
+    line-height: 1.7em;
+    font-family: "Golos Text", sans-serif;
+  }
+
+  @media (min-height: 910px) {
+    .aboutPara1 {
+      grid-column: 1 / span 8;
+      grid-row: 30 / span 45;
+    }
+
+    .aboutPara2 {
+      grid-column: 1 / span 8;
+      grid-row: 80 / span 45;
+    }
+  }
 }
 
-.heading span {
+@media (min-width: 992px) {
+  .aboutPara1 {
+    grid-column: 2 / span 4;
+    grid-row: 24 / span 60;
     background-color: $secondary-color;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 8%;
+    padding-top: 15%;
+    font-size: 0.9em;
+    line-height: 1.7em;
+    font-family: "Golos Text", sans-serif;
+    color: $primary-color;
+  }
+
+  .aboutPara2 {
+    grid-column: 8 / span 4;
+    grid-row: 24 / span 60;
+    background-color: #c2d0e2;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 8%;
+    padding-top: 15%;
+    font-size: 0.9em;
+    line-height: 1.7em;
+    font-family: "Golos Text", sans-serif;
+  }
+
+  @media (min-height: 910px) {
+  }
+}
+
+@media (min-width: 1150px) {
+  .aboutPara1 {
+    grid-column: 2 / span 4;
+    grid-row: 24 / span 60;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 8%;
+    padding-top: 15%;
+    font-size: 1em;
+    line-height: 1.7em;
+    font-family: "Golos Text", sans-serif;
+    color: $primary-color;
+  }
+
+  .aboutPara2 {
+    grid-column: 8 / span 4;
+    grid-row: 24 / span 60;
+    background-color: #c2d0e2;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 8%;
+    padding-top: 15%;
+    font-size: 1em;
+    line-height: 1.7em;
+    font-family: "Golos Text", sans-serif;
+  }
 }

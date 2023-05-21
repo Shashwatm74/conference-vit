@@ -1,44 +1,107 @@
-@import '@/styles/abstract/mixin';
-@import '@/styles/abstract/variable';
+@import "@/styles/abstract/mixin";
+@import "@/styles/abstract/variable";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
 
 .speakers {
-    @include section;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 85%;
-    justify-items: center;
-    text-align: center;
-    column-gap: 1em;
+  @include section;
+  background-color: #ffffff;
+}
+.sectionWrapper {
+  @include sectionWrapper;
+}
+.headingSpeakers > h1 {
+  font-size: 2em;
+}
+.headingSpeakers {
+  //   @include sectionTitle;
+  grid-column: 4/10;
+  text-align: center;
+}
+@media (max-width: 1897px) {
+  .headingSpeakers {
+    grid-column: 3/10;
+  }
+}
+@media (max-width: 1626px) {
+  .headingSpeakers > h1 {
+    font-size: 1.6em;
+  }
+  .headingSpeakers {
+    grid-column: 3/10;
+  }
+}
+@media (max-width: 992px) {
+  .headingSpeakers {
+    grid-column: 2/8;
+  }
+}
+@media (max-width: 625px) {
+  .headingSpeakers > h1 {
+    font-size: 1.4em;
+  }
+  .headingSpeakers {
+    grid-column: 1/9;
+  }
+}
+.sectionWrapper {
+  @include sectionWrapper;
+}
+
+.course_btn {
+  @include mix_black_button;
+  grid-row: 76;
+
+  @media (max-width: 600px) {
+    grid-column: 2 / span 3;
+
+    @media (min-height: 900px) {
+      grid-row: 100;
+    }
+  }
+
+  @media (min-width: 600px) {
+    grid-column: 6 / span 8;
+
+    @media (min-height: 900px) {
+      grid-row: 110;
+    }
+  }
+
+  @media (min-width: 992px) {
+    grid-column: 10 / span 2;
+  }
 }
 
 .card_gallery_wrap {
-    width: 70%;
+  margin-top: 2em;
+  grid-row: 5;
+  grid-column: 1 / span 12;
 
+  @media (min-height: 910px) {
+    grid-row: 25;
+  }
 }
 
 .card_carousel {
-    overflow-x: scroll;
-    display: flex;
-    gap: 5em;
-
+  overflow-x: scroll;
+  display: flex;
+  gap: 5em;
+  padding-bottom: 2em;
 }
 
-.heading span {
-    background-color: $secondary-color;
+.headingCourses span {
+  background-color: #c2d0e2;
 }
-
 
 .card_carousel::-webkit-scrollbar {
-    width: 10px;
+  cursor: pointer;
 }
 
 .card_carousel::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.ccard_carousel::-webkit-scrollbar-thumb {
-    background-color: $tertiary-color;
-    border-radius: 10px;
-
+.card_carousel::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
 }
