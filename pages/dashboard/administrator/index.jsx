@@ -27,7 +27,7 @@ export default function Dashboard() {
                             <div className={styles.stateName}>Uttar Pradesh</div>
                             <div className={styles.phNumber}>9876543210</div>
                         </div>
-                        <button className={styles.editButton}>Edit</button>
+                        <Link href={"/dashboard/profile"} replace><button className={styles.editButton}>Edit</button></Link>
                     </div>
 
                     <div className={styles.meetCard}>

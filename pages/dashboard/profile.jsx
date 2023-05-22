@@ -3,11 +3,8 @@
 
 import React from "react";
 import styles from "@/styles/components/dashboard/Profile.module.scss";
-<<<<<<< HEAD
+
 import { Button } from "@geist-ui/react";
-=======
-import Head from "next/head";
->>>>>>> 26fe886d38caab582b7cebe16d88a9e6d244b53f
 
 export default function Dashboard() {
     return (
