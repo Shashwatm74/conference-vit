@@ -3,7 +3,11 @@
 
 import React from "react";
 import styles from "@/styles/components/dashboard/Profile.module.scss";
+<<<<<<< HEAD
 import { Button } from "@geist-ui/react";
+=======
+import Head from "next/head";
+>>>>>>> 26fe886d38caab582b7cebe16d88a9e6d244b53f
 
 export default function Dashboard() {
     return (
@@ -11,6 +15,14 @@ export default function Dashboard() {
             <section section data-scroll-section className={styles.profile} id="profile">
                 <div className={styles.sectionWrapper}>
                     <div className={styles.profileCard}>
+
+                        <script defer src="https://cdn.lordicon.com/bhenfmcm.js" />
+
+                        <lord-icon src="https://cdn.lordicon.com/jxwksgwv.json"
+                            trigger="hover"
+                            colors="primary:#121331"                        >
+                        </lord-icon>
+
                         ACCOUNT SETTINGS
                         <div className={styles.photo}>Photo</div>
                         <div className={styles.headCard}>

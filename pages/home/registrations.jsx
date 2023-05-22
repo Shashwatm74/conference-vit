@@ -77,9 +77,9 @@ function About() {
 
   return (
     <>
-      <section data-scroll-section className={styles.about} id="about">
+      <section data-scroll-section className={styles.registration} id="about">
         <div className={styles.sectionWrapper}>
-          <h1 ref={headingRef} className={styles.aboutTitle}>
+          <h1 ref={headingRef} className={styles.registrationTitle}>
             Save Time and Study More , We have your back!!
           </h1>
           <p ref={card1Ref} className={styles.aboutPara1}>
