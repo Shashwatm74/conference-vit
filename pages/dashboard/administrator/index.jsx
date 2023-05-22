@@ -16,7 +16,16 @@ export default function Dashboard() {
             <section className={styles.dashboard}>
                 <div className={styles.sectionWrapper}>
                     <div className={styles.profile}>
-                        profile section
+                        <div className={styles.photo}>Photo</div>
+                        <div className={styles.headCard}>
+                            <div className={styles.nameHead}>John Wick</div>
+                            <div className={styles.emailHead}>johnwick@gmail.com</div>
+                        </div>
+                        <div className={styles.locDetails}>
+                            <div className={styles.collegeName}>Indian Institute of Technology Kanpur</div>
+                            <div className={styles.stateName}>Uttar Pradesh</div>
+                            <div className={styles.phNumber}>9876543210</div>
+                        </div>
                         <button className={styles.editButton}>Edit</button>
                     </div>
 
