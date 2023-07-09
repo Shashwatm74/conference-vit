@@ -35,8 +35,6 @@ export default function Dashboard() {
                         </div>
                     </div>
 
-
-                    <div className={styles.registrationCard}></div>
                 </div>
             </section>
         </>

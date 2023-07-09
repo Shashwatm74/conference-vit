@@ -19,7 +19,7 @@ export default function Dashboard() {
                     <div className={styles.meetCard}>
                         <div className={styles.meetWindow}></div>
                     </div>
-                    <div className={styles.registrationCard}></div>
+                    {/* <div className={styles.registrationCard}></div> */}
                 </div>
             </section>
         </>

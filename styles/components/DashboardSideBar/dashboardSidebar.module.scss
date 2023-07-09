@@ -25,6 +25,12 @@
     }
 }
 
+.sidebargreeting {
+    @media (max-width:1300px) {
+        visibility: hidden;
+    }
+}
+
 .link {
 
     height: 2em;
