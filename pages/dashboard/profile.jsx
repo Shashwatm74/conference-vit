@@ -3,7 +3,8 @@
 
 import React from "react";
 import styles from "@/styles/components/dashboard/Profile.module.scss";
-import Head from "next/head";
+
+import { Button } from "@geist-ui/react";
 
 export default function Dashboard() {
     return (
@@ -46,6 +47,10 @@ export default function Dashboard() {
                             {/* Pincode */}
                             <input className={styles.pinBox} placeholder="987654" />
                             {/* </div> */}
+                            <div className={styles.buttonBox}>
+                                <Button className={styles.Button}>Save</Button>
+                                <Button className={styles.Button}>Back</Button>
+                            </div>
                         </div>
                     </div>
                 </div>
