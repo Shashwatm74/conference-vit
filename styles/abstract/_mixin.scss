@@ -4,6 +4,7 @@
   justify-content: center;
   scroll-margin-top: 3.6em;
 }
+
 @mixin sectionTitle {
   @media (max-width: 600px) {
     grid-column: 1 / span 4;
@@ -27,6 +28,7 @@
     z-index: 1;
   }
 }
+
 @mixin sectionWrapper {
   @media (max-width: 600px) {
     display: grid;
@@ -57,6 +59,7 @@
   color: $tertiary-color;
   user-select: none;
 }
+
 @mixin mix_black_button {
   height: 3em;
   width: 9.1em;
@@ -69,6 +72,7 @@
   color: $primary-color;
   cursor: pointer;
 }
+
 @mixin login_signup_card_wrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -174,4 +178,22 @@
   border-radius: 8px;
   position: relative;
   background-color: $primary-color;
+}
+
+@mixin dashboard_section_wrapper {
+  margin-bottom: 15px;
+  margin-top: 32px;
+  height: 92vh;
+
+  @media(min-width:300px) {
+    width: 92%;
+    margin-left: 47px;
+    margin-top: 70px;
+    margin-right: 5px;
+  }
+
+  @media (min-width:1300px)and (min-height:413px) {
+    margin-left: 320px;
+  }
+
 }

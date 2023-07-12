@@ -14,7 +14,7 @@
     width: 250px;
     height: 100vh;
     left: 0px;
-    top: 0px;
+    top: 55px;
     border-radius: 8px 0px 0px 8px;
     z-index: 1001;
     background: $primary-color;
@@ -27,8 +27,9 @@
 
 .sidebargreeting {
     @media (max-width:1300px) {
-        visibility: hidden;
+        display: none;
     }
+
 }
 
 .link {

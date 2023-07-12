@@ -9,7 +9,7 @@ import Link from "next/link";
 
 
 export default function Dashboard() {
-    const dateTimeTarget = new Date('June 3, 23 17:30:00 GMT+05:30').getTime();
+    const dateTimeTarget = new Date('June 3, 24 17:30:00 GMT+05:30').getTime();
     return (
         <>
 

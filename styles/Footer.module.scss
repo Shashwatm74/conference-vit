@@ -6,7 +6,10 @@
 .footer {
     background-color: $tertiary-color;
     z-index: 1010;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .container {
@@ -20,7 +23,8 @@
 .copyright {
     color: gray;
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 5px;
     z-index: 1010;
+    font-size: 8px;
+    padding-top: 2px;
 }

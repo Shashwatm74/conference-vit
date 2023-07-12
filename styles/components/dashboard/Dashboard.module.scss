@@ -4,32 +4,27 @@
 
 
 .dashboard {
-    @include section;
     background-color: $dashboard-bg-color;
-
-    @media (min-width: 600px) {
-        height: max(700px, 140vh);
-    }
-
-    @media (max-width: 600px) {
-        height: max(700px, 140vh);
-    }
-
-    @media(min-width:1300px) {
-        margin-left: 280px;
-        height: max(750px, 100vh);
-    }
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 3.6em;
+    height: fit-content;
 }
+
 
 .sectionWrapper {
     @include sectionWrapper;
-    height: 95vh;
-    margin-bottom: 32px;
+    height: 92vh;
 
     @media(min-width:300px) {
         width: 92%;
         margin-left: 42px;
         margin-top: 60px;
+    }
+
+    @media (min-width:1300px) and (min-height:500px) {
+        margin-left: 320px;
+        margin-right: 5px;
     }
 }
 
@@ -58,7 +53,7 @@
 
     .meetCard {
         grid-row: 49/span 35;
-        grid-column: 1/ span 4;
+        grid-column: 1/ span 8;
 
     }
 
@@ -72,7 +67,7 @@
 
     .meetCard {
         grid-row: 49/span 35;
-        grid-column: 1/ span 8;
+        grid-column: 1/ span 4;
 
     }
 
@@ -149,7 +144,7 @@
 /// profile card specific css //////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 
-.profile{
+.profile {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: none;
@@ -177,31 +172,31 @@
     height: 40%;
 }
 
-.nameHead{
+.nameHead {
     grid-column: 1;
     border-radius: 8px;
-    height:auto;
+    height: auto;
     font-size: x-large;
     font: $heading-font;
 }
 
-.emailHead{
+.emailHead {
     grid-column: 1;
     border-radius: 8px;
-    height:auto;
+    height: auto;
     color: rgb(137, 137, 137);
     font-size: medium;
 }
 
-.locDetails{
+.locDetails {
     grid-column: 2;
     row-gap: 20px;
-    height:190px;
+    height: 190px;
     width: 95%;
     border-radius: 8px;
 }
 
-.collegeName{
+.collegeName {
     height: 25px;
     width: 90%;
     padding: 0.5em;
@@ -209,7 +204,7 @@
     border-radius: 8px;
 }
 
-.stateName{
+.stateName {
     height: 25px;
     width: 90%;
     padding: 0.5em;
@@ -217,7 +212,7 @@
     border-radius: 8px;
 }
 
-.phNumber{
+.phNumber {
     height: 25px;
     width: 90%;
     padding: 0.5em;

@@ -30,9 +30,7 @@ export default function PrivacyPolicy() {
                         <h3>Contact Us:</h3>
                         If you have any questions or concerns about our privacy policy, please contact us at  confenrence@gmail.com
 
-                        <button className={styles.editPrivacyButton}>
-                            edit
-                        </button>
+
                     </div>
                 </div>
             </section>

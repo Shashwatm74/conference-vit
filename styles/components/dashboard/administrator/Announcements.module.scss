@@ -5,33 +5,15 @@
 
 
 .announcements {
-    @include section;
     background-color: $dashboard-bg-color;
-
-    @media (min-width: 600px) {
-        height: max(700px, 140vh);
-    }
-
-    @media (max-width: 600px) {
-        height: max(700px, 140vh);
-    }
-
-    @media(min-width:1300px) {
-        margin-left: 280px;
-        height: max(750px, 100vh);
-    }
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 3.6em;
+    height: fit-content;
 }
 
 .sectionWrapper {
-    @include sectionWrapper;
-    height: 95vh;
-    margin-bottom: 32px;
-
-    @media(min-width:300px) {
-        width: 92%;
-        margin-left: 42px;
-        margin-top: 60px;
-    }
+    @include dashboard_section_wrapper;
 }
 
 .announcementsCard {

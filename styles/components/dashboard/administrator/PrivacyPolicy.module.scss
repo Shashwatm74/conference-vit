@@ -5,32 +5,26 @@
 
 
 .privacyPolicy {
-    @include section;
     background-color: $dashboard-bg-color;
-
-    @media (min-width: 600px) {
-        height: max(700px, 140vh);
-    }
-
-    @media (max-width: 600px) {
-        height: max(700px, 140vh);
-    }
-
-    @media(min-width:1300px) {
-        margin-left: 280px;
-        height: max(750px, 115vh);
-    }
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 3.6em;
+    height: fit-content;
 }
 
 .sectionWrapper {
-    @include sectionWrapper;
-    height: 105vh;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
+    margin-top: 32px;
 
     @media(min-width:300px) {
         width: 92%;
-        margin-left: 42px;
-        margin-top: 60px;
+        margin-left: 47px;
+        margin-top: 70px;
+        margin-right: 5px;
+    }
+
+    @media (min-width:1300px)and (min-height:500px) {
+        margin-left: 320px;
     }
 }
 
