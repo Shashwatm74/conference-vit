@@ -8,7 +8,7 @@ function Footer() {
 
                 <div className={styles.copyright}>
                     <hr />
-                    &#169; Vellore institute of Technology
+                    &#169; Vellore Institute of Technology
                 </div>
             </div>
         </footer>

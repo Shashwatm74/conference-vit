@@ -105,7 +105,7 @@ function Course() {
               ))}
             </div>
           </div>
-          <button className={styles.course_btn}>All Courses &gt;</button>
+
         </div>
       </section>
     </>
